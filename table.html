@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Fortran Table for dynamically extendable arrays &mdash; quippy  documentation</title>
+    <title>Fortran Table for dynamically extendable arrays &mdash; quippy ac3573e documentation</title>
     
     <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '',
+        VERSION:     'ac3573e',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="quippy  documentation" href="index.html" />
+    <link rel="top" title="quippy ac3573e documentation" href="index.html" />
     <link rel="up" title="Quippy library reference" href="quippy.html" /> 
   </head>
   <body role="document">
@@ -36,7 +36,7 @@
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">quippy  documentation</a> &raquo;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">quippy ac3573e documentation</a> &raquo;</li>
           <li class="nav-item nav-item-1"><a href="quippy.html" accesskey="U">Quippy library reference</a> &raquo;</li> 
       </ul>
     </div>
@@ -157,8 +157,8 @@ number of reals, number of strings and number of logicals can be zero</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_allocate</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.
-Class is wrapper around Fortran type <code class="docutils literal"><span class="pre">Table</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_allocate</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.
+Class is wrapper around Fortran type <code class="docutils literal"><span class="pre">Table</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 <p class="rubric">Attributes</p>
 <table border="1" class="longtable docutils">
 <colgroup>
@@ -208,6 +208,24 @@ Class is wrapper around Fortran type <code class="docutils literal"><span class=
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#quippy.table.Table.allocate" title="quippy.table.Table.allocate"><code class="xref py py-obj docutils literal"><span class="pre">allocate</span></code></a>(...)</td>
+<td>Allocate a <code class="docutils literal"><span class="pre">Table</span></code>.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#quippy.table.Table.append" title="quippy.table.Table.append"><code class="xref py py-obj docutils literal"><span class="pre">append</span></code></a>(*args,&nbsp;**kwargs)</td>
+<td>Append rows to a table.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#quippy.table.Table.append_column" title="quippy.table.Table.append_column"><code class="xref py py-obj docutils literal"><span class="pre">append_column</span></code></a>(*args,&nbsp;**kwargs)</td>
+<td>Append 1 or more columns to a table.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#quippy.table.Table.delete" title="quippy.table.Table.delete"><code class="xref py py-obj docutils literal"><span class="pre">delete</span></code></a>(*args,&nbsp;**kwargs)</td>
+<td>Delete a row by index or by value.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#quippy.table.Table.delete_multiple" title="quippy.table.Table.delete_multiple"><code class="xref py py-obj docutils literal"><span class="pre">delete_multiple</span></code></a>(indices)</td>
+<td>Delete multiple rows from a Table.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#quippy.table.Table.find" title="quippy.table.Table.find"><code class="xref py py-obj docutils literal"><span class="pre">find</span></code></a>(*args,&nbsp;**kwargs)</td>
+<td>Search the integer part of a table for a given element or array.</td>
+</tr>
 <tr class="row-odd"><td><a class="reference internal" href="#quippy.table.Table.from_atom_indices" title="quippy.table.Table.from_atom_indices"><code class="xref py py-obj docutils literal"><span class="pre">from_atom_indices</span></code></a>(atoms[,&nbsp;mask,&nbsp;list,&nbsp;...])</td>
 <td>Construct a new Table containing atomic indices from a list or mask</td>
 </tr>
@@ -217,11 +235,89 @@ Class is wrapper around Fortran type <code class="docutils literal"><span class=
 <tr class="row-odd"><td><a class="reference internal" href="#quippy.table.Table.from_atom_mask" title="quippy.table.Table.from_atom_mask"><code class="xref py py-obj docutils literal"><span class="pre">from_atom_mask</span></code></a>(atoms,&nbsp;mask[,&nbsp;...])</td>
 <td>Construct a new Table from an atom mask</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#quippy.table.Table.to_atom_list" title="quippy.table.Table.to_atom_list"><code class="xref py py-obj docutils literal"><span class="pre">to_atom_list</span></code></a>([atoms])</td>
+<tr class="row-even"><td><a class="reference internal" href="#quippy.table.Table.insert" title="quippy.table.Table.insert"><code class="xref py py-obj docutils literal"><span class="pre">insert</span></code></a>(...)</td>
+<td>insert a row at a given position</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#quippy.table.Table.int_part" title="quippy.table.Table.int_part"><code class="xref py py-obj docutils literal"><span class="pre">int_part</span></code></a>(*args,&nbsp;**kwargs)</td>
+<td>Utility function to return one or more columns from the integer part of a table.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#quippy.table.Table.int_subtable" title="quippy.table.Table.int_subtable"><code class="xref py py-obj docutils literal"><span class="pre">int_subtable</span></code></a>(rows,cols)</td>
+<td><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">is_same_fortran_object</span></code>(other)</td>
+<td>Test if <cite>self</cite> and <cite>other</cite> point to the same Fortan object.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#quippy.table.Table.logical_part" title="quippy.table.Table.logical_part"><code class="xref py py-obj docutils literal"><span class="pre">logical_part</span></code></a>(*args,&nbsp;**kwargs)</td>
+<td>Wrapper around Fortran interface <code class="docutils literal"><span class="pre">logical_part</span></code> containing multiple routines:</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#quippy.table.Table.print_" title="quippy.table.Table.print_"><code class="xref py py-obj docutils literal"><span class="pre">print_</span></code></a>(*args,&nbsp;**kwargs)</td>
+<td>Print this table to the mainlog or to an inoutput object.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#quippy.table.Table.real_part" title="quippy.table.Table.real_part"><code class="xref py py-obj docutils literal"><span class="pre">real_part</span></code></a>(*args,&nbsp;**kwargs)</td>
+<td>Utility function to return one or more columns from the real part of a table.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#quippy.table.Table.record_delete_multiple" title="quippy.table.Table.record_delete_multiple"><code class="xref py py-obj docutils literal"><span class="pre">record_delete_multiple</span></code></a>(indices)</td>
+<td><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#quippy.table.Table.remove_columns" title="quippy.table.Table.remove_columns"><code class="xref py py-obj docutils literal"><span class="pre">remove_columns</span></code></a>(...)</td>
+<td>remove a range of columns from a table&#8217;s int or real parts</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#quippy.table.Table.search" title="quippy.table.Table.search"><code class="xref py py-obj docutils literal"><span class="pre">search</span></code></a>(intpart)</td>
+<td>Do a binary search (faster than find) on a pre-sorted table</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#quippy.table.Table.select" title="quippy.table.Table.select"><code class="xref py py-obj docutils literal"><span class="pre">select</span></code></a>(to,from,[row_mask,row_list])</td>
+<td>Select certains rows from a table based on a mask</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#quippy.table.Table.set_increment" title="quippy.table.Table.set_increment"><code class="xref py py-obj docutils literal"><span class="pre">set_increment</span></code></a>(increment)</td>
+<td>Change the increment for this table.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">shallow_copy</span></code>()</td>
+<td>Return a shallow copy of <cite>self</cite>.</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">shallow_copy_from</span></code>(other)</td>
+<td>Transform <cite>self</cite> into a shallow copy of <cite>other</cite>.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#quippy.table.Table.sort" title="quippy.table.Table.sort"><code class="xref py py-obj docutils literal"><span class="pre">sort</span></code></a>([idx,int_cols])</td>
+<td>Sort a table according to its int part</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#quippy.table.Table.str_part" title="quippy.table.Table.str_part"><code class="xref py py-obj docutils literal"><span class="pre">str_part</span></code></a>(*args,&nbsp;**kwargs)</td>
+<td>Wrapper around Fortran interface <code class="docutils literal"><span class="pre">str_part</span></code> containing multiple routines:</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#quippy.table.Table.subtable" title="quippy.table.Table.subtable"><code class="xref py py-obj docutils literal"><span class="pre">subtable</span></code></a>(...)</td>
+<td><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#quippy.table.Table.to_atom_list" title="quippy.table.Table.to_atom_list"><code class="xref py py-obj docutils literal"><span class="pre">to_atom_list</span></code></a>([atoms])</td>
 <td>Return list of atom indices that this Table represents.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#quippy.table.Table.to_atom_mask" title="quippy.table.Table.to_atom_mask"><code class="xref py py-obj docutils literal"><span class="pre">to_atom_mask</span></code></a>([atoms])</td>
+<tr class="row-even"><td><a class="reference internal" href="#quippy.table.Table.to_atom_mask" title="quippy.table.Table.to_atom_mask"><code class="xref py py-obj docutils literal"><span class="pre">to_atom_mask</span></code></a>([atoms])</td>
 <td>Return mask for atom indices that this Table represents</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#quippy.table.Table.wipe" title="quippy.table.Table.wipe"><code class="xref py py-obj docutils literal"><span class="pre">wipe</span></code></a>([zero])</td>
+<td>Clear this table, but keep the allocation.</td>
 </tr>
 </tbody>
 </table>
@@ -263,7 +359,7 @@ allocated accordingly.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">__init__allocate</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">__init__allocate</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -282,13 +378,13 @@ arrays or other tables.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>intpart</strong> (<em>input int</em>) &#8211; </li>
-<li><strong>realpart</strong> (<em>input rank-1 array(&#8216;d&#8217;) with bounds (qp_n0)</em>) &#8211; </li>
+<li><strong>realpart</strong> (<em>input rank-1 array('d') with bounds (qp_n0)</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_int_element_real_row</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_int_element_real_row</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -300,13 +396,13 @@ arrays or other tables.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>intpart</strong> (<em>input int</em>) &#8211; </li>
-<li><strong>error</strong> (<em>in/output rank-0 array(int,&#8217;i&#8217;), optional</em>) &#8211; </li>
+<li><strong>error</strong> (<em>in/output rank-0 array(int,'i'), optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_int_element</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_int_element</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -317,14 +413,14 @@ arrays or other tables.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>intpart</strong> (<em>input rank-1 array(&#8216;i&#8217;) with bounds (qp_n0)</em>) &#8211; </li>
+<li><strong>intpart</strong> (<em>input rank-1 array('i') with bounds (qp_n0)</em>) &#8211; </li>
 <li><strong>realpart</strong> (<em>input float</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_int_row_real_element</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_int_row_real_element</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -334,11 +430,11 @@ arrays or other tables.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>intpart</strong> (<em>input rank-2 array(&#8216;i&#8217;) with bounds (qp_n0,qp_n1)</em>) &#8211; </td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>intpart</strong> (<em>input rank-2 array('i') with bounds (qp_n0,qp_n1)</em>) &#8211; </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_int_array</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_int_array</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -352,7 +448,7 @@ arrays or other tables.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_real_element</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_real_element</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -366,7 +462,7 @@ arrays or other tables.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_table</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_table</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -376,11 +472,11 @@ arrays or other tables.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>strpart</strong> (<em>input rank-3 array(&#8216;S&#8217;) with bounds (qp_n0,qp_n1,(10))</em>) &#8211; </td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>strpart</strong> (<em>input rank-3 array('S') with bounds (qp_n0,qp_n1,(10))</em>) &#8211; </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_str_array</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_str_array</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -390,11 +486,11 @@ arrays or other tables.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>logicalpart</strong> (<em>input rank-2 array(&#8216;i&#8217;) with bounds (qp_n0,qp_n1)</em>) &#8211; </td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>logicalpart</strong> (<em>input rank-2 array('i') with bounds (qp_n0,qp_n1)</em>) &#8211; </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_logical_array</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_logical_array</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -406,13 +502,13 @@ arrays or other tables.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>strpart</strong> (<em>input string(len=-1)</em>) &#8211; </li>
-<li><strong>error</strong> (<em>in/output rank-0 array(int,&#8217;i&#8217;), optional</em>) &#8211; </li>
+<li><strong>error</strong> (<em>in/output rank-0 array(int,'i'), optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_str_element</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_str_element</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -426,7 +522,7 @@ arrays or other tables.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_logical_element</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_logical_element</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -436,11 +532,11 @@ arrays or other tables.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>realpart</strong> (<em>input rank-2 array(&#8216;d&#8217;) with bounds (qp_n0,qp_n1)</em>) &#8211; </td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>realpart</strong> (<em>input rank-2 array('d') with bounds (qp_n0,qp_n1)</em>) &#8211; </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_real_array</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_real_array</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -451,21 +547,21 @@ arrays or other tables.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>intpart</strong> (<em>input rank-1 array(&#8216;i&#8217;) with bounds (qp_n0), optional</em>) &#8211; </li>
-<li><strong>realpart</strong> (<em>input rank-1 array(&#8216;d&#8217;) with bounds (qp_n1), optional</em>) &#8211; </li>
-<li><strong>strpart</strong> (<em>input rank-2 array(&#8216;S&#8217;) with bounds (qp_n2,(10)), optional</em>) &#8211; </li>
-<li><strong>logicalpart</strong> (<em>input rank-1 array(&#8216;i&#8217;) with bounds (qp_n3), optional</em>) &#8211; </li>
-<li><strong>intpart_2d</strong> (<em>input rank-2 array(&#8216;i&#8217;) with bounds (qp_n4,qp_n5), optional</em>) &#8211; </li>
-<li><strong>realpart_2d</strong> (<em>input rank-2 array(&#8216;d&#8217;) with bounds (qp_n6,qp_n7), optional</em>) &#8211; </li>
-<li><strong>strpart_2d</strong> (<em>input rank-3 array(&#8216;S&#8217;) with bounds (qp_n8,qp_n9,(10)), optional</em>) &#8211; </li>
-<li><strong>logicalpart_2d</strong> (<em>input rank-2 array(&#8216;i&#8217;) with bounds (qp_n10,qp_n11), optional</em>) &#8211; </li>
+<li><strong>intpart</strong> (<em>input rank-1 array('i') with bounds (qp_n0), optional</em>) &#8211; </li>
+<li><strong>realpart</strong> (<em>input rank-1 array('d') with bounds (qp_n1), optional</em>) &#8211; </li>
+<li><strong>strpart</strong> (<em>input rank-2 array('S') with bounds (qp_n2,(10)), optional</em>) &#8211; </li>
+<li><strong>logicalpart</strong> (<em>input rank-1 array('i') with bounds (qp_n3), optional</em>) &#8211; </li>
+<li><strong>intpart_2d</strong> (<em>input rank-2 array('i') with bounds (qp_n4,qp_n5), optional</em>) &#8211; </li>
+<li><strong>realpart_2d</strong> (<em>input rank-2 array('d') with bounds (qp_n6,qp_n7), optional</em>) &#8211; </li>
+<li><strong>strpart_2d</strong> (<em>input rank-3 array('S') with bounds (qp_n8,qp_n9,(10)), optional</em>) &#8211; </li>
+<li><strong>logicalpart_2d</strong> (<em>input rank-2 array('i') with bounds (qp_n10,qp_n11), optional</em>) &#8211; </li>
 <li><strong>blank_rows</strong> (<em>input int, optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_row_or_arrays</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_row_or_arrays</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -483,7 +579,7 @@ arrays or other tables.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_int_element_and_real_element</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_int_element_and_real_element</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 </div></blockquote>
@@ -506,13 +602,13 @@ a scalar, 1-D array (must match N rows), or other tables (must match N rows)</p>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>val</strong> (<em>input int</em>) &#8211; </li>
 <li><strong>n_cols</strong> (<em>input int, optional</em>) &#8211; </li>
-<li><strong>cols</strong> (<em>in/output rank-1 array(&#8216;i&#8217;) with bounds (2), optional</em>) &#8211; </li>
+<li><strong>cols</strong> (<em>in/output rank-1 array('i') with bounds (2), optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_col_i</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_col_i</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -525,13 +621,13 @@ a scalar, 1-D array (must match N rows), or other tables (must match N rows)</p>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>val</strong> (<em>input int</em>) &#8211; </li>
 <li><strong>n_cols</strong> (<em>input int, optional</em>) &#8211; </li>
-<li><strong>cols</strong> (<em>in/output rank-1 array(&#8216;i&#8217;) with bounds (2), optional</em>) &#8211; </li>
+<li><strong>cols</strong> (<em>in/output rank-1 array('i') with bounds (2), optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_col_l</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_col_l</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -544,13 +640,13 @@ a scalar, 1-D array (must match N rows), or other tables (must match N rows)</p>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>val</strong> (<em>input string(len=10)</em>) &#8211; </li>
 <li><strong>n_cols</strong> (<em>input int, optional</em>) &#8211; </li>
-<li><strong>cols</strong> (<em>in/output rank-1 array(&#8216;i&#8217;) with bounds (2), optional</em>) &#8211; </li>
+<li><strong>cols</strong> (<em>in/output rank-1 array('i') with bounds (2), optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_col_s</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_col_s</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -563,13 +659,13 @@ a scalar, 1-D array (must match N rows), or other tables (must match N rows)</p>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>val</strong> (<em>input float</em>) &#8211; </li>
 <li><strong>n_cols</strong> (<em>input int, optional</em>) &#8211; </li>
-<li><strong>cols</strong> (<em>in/output rank-1 array(&#8216;i&#8217;) with bounds (2), optional</em>) &#8211; </li>
+<li><strong>cols</strong> (<em>in/output rank-1 array('i') with bounds (2), optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_col_r</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_col_r</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -580,15 +676,15 @@ a scalar, 1-D array (must match N rows), or other tables (must match N rows)</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>val_a</strong> (<em>input rank-2 array(&#8216;S&#8217;) with bounds (qp_n0,(10))</em>) &#8211; </li>
+<li><strong>val_a</strong> (<em>input rank-2 array('S') with bounds (qp_n0,(10))</em>) &#8211; </li>
 <li><strong>n_cols</strong> (<em>input int, optional</em>) &#8211; </li>
-<li><strong>cols</strong> (<em>in/output rank-1 array(&#8216;i&#8217;) with bounds (2), optional</em>) &#8211; </li>
+<li><strong>cols</strong> (<em>in/output rank-1 array('i') with bounds (2), optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_col_s_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_col_s_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -599,15 +695,15 @@ a scalar, 1-D array (must match N rows), or other tables (must match N rows)</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>val_a</strong> (<em>input rank-1 array(&#8216;i&#8217;) with bounds (qp_n0)</em>) &#8211; </li>
+<li><strong>val_a</strong> (<em>input rank-1 array('i') with bounds (qp_n0)</em>) &#8211; </li>
 <li><strong>n_cols</strong> (<em>input int, optional</em>) &#8211; </li>
-<li><strong>cols</strong> (<em>in/output rank-1 array(&#8216;i&#8217;) with bounds (2), optional</em>) &#8211; </li>
+<li><strong>cols</strong> (<em>in/output rank-1 array('i') with bounds (2), optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_col_i_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_col_i_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -621,7 +717,7 @@ a scalar, 1-D array (must match N rows), or other tables (must match N rows)</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_col_table</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_col_table</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -632,15 +728,15 @@ a scalar, 1-D array (must match N rows), or other tables (must match N rows)</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>val_a</strong> (<em>input rank-1 array(&#8216;d&#8217;) with bounds (qp_n0)</em>) &#8211; </li>
+<li><strong>val_a</strong> (<em>input rank-1 array('d') with bounds (qp_n0)</em>) &#8211; </li>
 <li><strong>n_cols</strong> (<em>input int, optional</em>) &#8211; </li>
-<li><strong>cols</strong> (<em>in/output rank-1 array(&#8216;i&#8217;) with bounds (2), optional</em>) &#8211; </li>
+<li><strong>cols</strong> (<em>in/output rank-1 array('i') with bounds (2), optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_col_r_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_col_r_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -651,15 +747,15 @@ a scalar, 1-D array (must match N rows), or other tables (must match N rows)</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>val_a</strong> (<em>input rank-1 array(&#8216;i&#8217;) with bounds (qp_n0)</em>) &#8211; </li>
+<li><strong>val_a</strong> (<em>input rank-1 array('i') with bounds (qp_n0)</em>) &#8211; </li>
 <li><strong>n_cols</strong> (<em>input int, optional</em>) &#8211; </li>
-<li><strong>cols</strong> (<em>in/output rank-1 array(&#8216;i&#8217;) with bounds (2), optional</em>) &#8211; </li>
+<li><strong>cols</strong> (<em>in/output rank-1 array('i') with bounds (2), optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_col_l_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_append_col_l_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 </div></blockquote>
@@ -688,7 +784,7 @@ over the row to be deleted, so the order of rows is not maintained.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_record_delete_by_index</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_record_delete_by_index</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -699,14 +795,14 @@ over the row to be deleted, so the order of rows is not maintained.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>n</strong> (<em>input rank-1 array(&#8216;i&#8217;) with bounds (n0)</em>) &#8211; </li>
+<li><strong>n</strong> (<em>input rank-1 array('i') with bounds (n0)</em>) &#8211; </li>
 <li><strong>keep_order</strong> (<em>input int, optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_record_delete_by_value</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_record_delete_by_value</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 </div></blockquote>
@@ -726,7 +822,7 @@ is not maintained.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">record_delete_multiple</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">record_delete_multiple</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -743,8 +839,8 @@ is not maintained.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>n</strong> (<em>input rank-1 array(&#8216;i&#8217;) with bounds (n0)</em>) &#8211; </li>
-<li><strong>mask</strong> (<em>input rank-1 array(&#8216;i&#8217;) with bounds (qp_n1), optional</em>) &#8211; </li>
+<li><strong>n</strong> (<em>input rank-1 array('i') with bounds (n0)</em>) &#8211; </li>
+<li><strong>mask</strong> (<em>input rank-1 array('i') with bounds (qp_n1), optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -753,7 +849,7 @@ is not maintained.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_find_row</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_find_row</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -769,7 +865,7 @@ is not maintained.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_find_element</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_find_element</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 </div></blockquote>
@@ -818,7 +914,7 @@ are converted to Fortran 1-based indexing.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">insert</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">insert</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -848,7 +944,7 @@ interface below.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_int_column</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_int_column</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -869,7 +965,7 @@ interface below.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_int_part</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_int_part</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -880,7 +976,7 @@ interface below.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>columns</strong> (<em>input rank-1 array(&#8216;i&#8217;) with bounds (qp_n0)</em>) &#8211; </li>
+<li><strong>columns</strong> (<em>input rank-1 array('i') with bounds (qp_n0)</em>) &#8211; </li>
 <li><strong>n1</strong> (<em>input int</em>) &#8211; shape(qp_ret_table_int_columns,0)</li>
 </ul>
 </td>
@@ -890,7 +986,7 @@ interface below.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_int_columns</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_int_columns</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 </div></blockquote>
@@ -913,7 +1009,7 @@ interface below.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">int_subtable</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">int_subtable</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -939,7 +1035,7 @@ interface below.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_logical_part</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_logical_part</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -950,7 +1046,7 @@ interface below.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>columns</strong> (<em>input rank-1 array(&#8216;i&#8217;) with bounds (qp_n0)</em>) &#8211; </li>
+<li><strong>columns</strong> (<em>input rank-1 array('i') with bounds (qp_n0)</em>) &#8211; </li>
 <li><strong>n1</strong> (<em>input int</em>) &#8211; shape(qp_ret_table_logical_columns,0)</li>
 </ul>
 </td>
@@ -960,7 +1056,7 @@ interface below.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_logical_columns</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_logical_columns</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -981,7 +1077,7 @@ interface below.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_logical_column</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_logical_column</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 </div></blockquote>
@@ -1007,13 +1103,13 @@ interface below.</p>
 <li><strong>int_format</strong> (<em>input string(len=-1), optional</em>) &#8211; </li>
 <li><strong>str_format</strong> (<em>input string(len=-1), optional</em>) &#8211; </li>
 <li><strong>logical_format</strong> (<em>input string(len=-1), optional</em>) &#8211; </li>
-<li><strong>mask</strong> (<em>input rank-1 array(&#8216;i&#8217;) with bounds (qp_n0), optional</em>) &#8211; </li>
+<li><strong>mask</strong> (<em>input rank-1 array('i') with bounds (qp_n0), optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_print</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_print</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1027,7 +1123,7 @@ interface below.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_print_mainlog</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_print_mainlog</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 </div></blockquote>
@@ -1047,7 +1143,7 @@ interface below.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>columns</strong> (<em>input rank-1 array(&#8216;i&#8217;) with bounds (qp_n0)</em>) &#8211; </li>
+<li><strong>columns</strong> (<em>input rank-1 array('i') with bounds (qp_n0)</em>) &#8211; </li>
 <li><strong>n1</strong> (<em>input int</em>) &#8211; shape(qp_ret_table_real_columns,0)</li>
 </ul>
 </td>
@@ -1057,7 +1153,7 @@ interface below.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_real_columns</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_real_columns</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1078,7 +1174,7 @@ interface below.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_real_part</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_real_part</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1099,7 +1195,7 @@ interface below.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_real_column</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_real_column</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 </div></blockquote>
@@ -1117,7 +1213,7 @@ interface below.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_record_delete_multiple</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_record_delete_multiple</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -1141,7 +1237,7 @@ interface below.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">remove_columns</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">remove_columns</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -1159,7 +1255,7 @@ interface below.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">search</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">search</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -1179,7 +1275,7 @@ interface below.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">select</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">select</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -1195,7 +1291,7 @@ interface below.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">set_increment</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">set_increment</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -1213,7 +1309,7 @@ interface below.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">sort</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">sort</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -1239,7 +1335,7 @@ interface below.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_str_column</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_str_column</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1250,7 +1346,7 @@ interface below.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>columns</strong> (<em>input rank-1 array(&#8216;i&#8217;) with bounds (qp_n0)</em>) &#8211; </li>
+<li><strong>columns</strong> (<em>input rank-1 array('i') with bounds (qp_n0)</em>) &#8211; </li>
 <li><strong>n1</strong> (<em>input int</em>) &#8211; shape(qp_ret_table_str_columns,0)</li>
 </ul>
 </td>
@@ -1260,7 +1356,7 @@ interface below.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_str_columns</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_str_columns</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1281,7 +1377,7 @@ interface below.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_str_part</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">table_str_part</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 </div></blockquote>
@@ -1307,7 +1403,7 @@ interface below.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">subtable</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">subtable</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -1345,7 +1441,7 @@ Table was not created in that way.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">wipe</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Table.f95">libAtoms/Table.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">wipe</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Table.f95">src/libAtoms/Table.f95</a>.</p>
 </dd></dl>
 
 <dl class="attribute">
@@ -1433,14 +1529,14 @@ Table was not created in that way.</p>
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">quippy  documentation</a> &raquo;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">quippy ac3573e documentation</a> &raquo;</li>
           <li class="nav-item nav-item-1"><a href="quippy.html" >Quippy library reference</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &copy; Copyright 2008-2015, James Kermode.
-      Last updated on Nov 17, 2015.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+      Last updated on Jan 14, 2016.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.4.
     </div>
   </body>
 </html>

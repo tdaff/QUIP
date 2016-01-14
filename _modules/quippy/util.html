@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>quippy.util &mdash; quippy  documentation</title>
+    <title>quippy.util &mdash; quippy ac3573e documentation</title>
     
     <link rel="stylesheet" href="../../_static/sphinxdoc.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '',
+        VERSION:     'ac3573e',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="top" title="quippy  documentation" href="../../index.html" />
+    <link rel="top" title="quippy ac3573e documentation" href="../../index.html" />
     <link rel="up" title="Module code" href="../index.html" /> 
   </head>
   <body role="document">
@@ -36,7 +36,7 @@
         <li class="right" >
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../../index.html">quippy  documentation</a> &raquo;</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">quippy ac3573e documentation</a> &raquo;</li>
           <li class="nav-item nav-item-1"><a href="../index.html" accesskey="U">Module code</a> &raquo;</li> 
       </ul>
     </div>
@@ -122,12 +122,12 @@
         <span class="k">else</span><span class="p">:</span>
             <span class="n">format</span> <span class="o">=</span> <span class="nb">file</span><span class="o">.</span><span class="n">__class__</span>
 
-    <span class="k">return</span> <span class="n">filename</span><span class="p">,</span> <span class="nb">file</span><span class="p">,</span> <span class="n">format</span>
-</div>
+    <span class="k">return</span> <span class="n">filename</span><span class="p">,</span> <span class="nb">file</span><span class="p">,</span> <span class="n">format</span></div>
+
 <div class="viewcode-block" id="args_str"><a class="viewcode-back" href="../../util.html#quippy.util.args_str">[docs]</a><span class="k">def</span> <span class="nf">args_str</span><span class="p">(</span><span class="n">D</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Construct args string from file, string or mapping object&quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">PuPyDictionary</span><span class="p">(</span><span class="n">D</span><span class="p">))</span>
-</div>
+    <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">PuPyDictionary</span><span class="p">(</span><span class="n">D</span><span class="p">))</span></div>
+
 <span class="n">dict_to_args_str</span> <span class="o">=</span> <span class="n">args_str</span> <span class="c"># synonym for args_str() function</span>
 
 <div class="viewcode-block" id="parse_slice"><a class="viewcode-back" href="../../util.html#quippy.util.parse_slice">[docs]</a><span class="k">def</span> <span class="nf">parse_slice</span><span class="p">(</span><span class="n">S</span><span class="p">):</span>
@@ -137,13 +137,13 @@
         <span class="k">def</span> <span class="nf">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">idx</span><span class="p">):</span>
             <span class="k">return</span> <span class="n">idx</span>
 
-    <span class="k">return</span> <span class="nb">eval</span><span class="p">(</span><span class="s">&#39;SliceParser()[</span><span class="si">%s</span><span class="s">]&#39;</span> <span class="o">%</span> <span class="n">S</span><span class="p">)</span>
-</div>
+    <span class="k">return</span> <span class="nb">eval</span><span class="p">(</span><span class="s">&#39;SliceParser()[</span><span class="si">%s</span><span class="s">]&#39;</span> <span class="o">%</span> <span class="n">S</span><span class="p">)</span></div>
+
 <div class="viewcode-block" id="parse_params"><a class="viewcode-back" href="../../util.html#quippy.util.parse_params">[docs]</a><span class="k">def</span> <span class="nf">parse_params</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
    <span class="sd">&quot;&quot;&quot;Read key=value pairs from a string or list of string and return a standard Python dictionary&quot;&quot;&quot;</span>
    <span class="n">p</span> <span class="o">=</span> <span class="n">PuPyDictionary</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-   <span class="k">return</span> <span class="nb">dict</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
-</div>
+   <span class="k">return</span> <span class="nb">dict</span><span class="p">(</span><span class="n">p</span><span class="p">)</span></div>
+
 <span class="n">args_str_to_dict</span> <span class="o">=</span> <span class="n">parse_params</span> <span class="c"># synonym for parse_params() function</span>
    
 
@@ -156,8 +156,8 @@
     <span class="k">else</span><span class="p">:</span>
         <span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="n">L</span><span class="p">]</span>
 
-    <span class="k">return</span> <span class="p">[</span><span class="n">k</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">L</span><span class="p">]</span>
-</div>
+    <span class="k">return</span> <span class="p">[</span><span class="n">k</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">L</span><span class="p">]</span></div>
+
 <span class="k">def</span> <span class="nf">loadstring</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="kn">import</span> <span class="nn">StringIO</span>
     <span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">loadtxt</span>
@@ -167,7 +167,7 @@
     <span class="sd">&quot;&quot;&quot;Search for an QUIP XML parameter set matching `name&#39; and, optionally `label`.</span>
 
 <span class="sd">    Result is the XML stanza as a string. Looks under</span>
-<span class="sd">    ${QUIP_ROOT}/QUIP_Core/parameters for a file matching `name`,</span>
+<span class="sd">    ${QUIP_ROOT}/share/Parameters for a file matching `name`,</span>
 <span class="sd">    `name`.xml, ip.parms.`name`.xml or tightbind.params.`name`.xml. If</span>
 <span class="sd">    `label` is given, it should be a text string matching the label</span>
 <span class="sd">    attribute of a QUIP &lt;params&gt; XML stanza. If a matching parameter</span>
@@ -178,7 +178,7 @@
     <span class="kn">from</span> <span class="nn">xml.parsers.expat</span> <span class="kn">import</span> <span class="n">ExpatError</span>
     <span class="kn">from</span> <span class="nn">xml.dom.minidom</span> <span class="kn">import</span> <span class="n">Element</span>
 
-    <span class="n">param_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">QUIP_ROOT</span><span class="p">,</span> <span class="s">&#39;QUIP_Core/parameters&#39;</span><span class="p">)</span>
+    <span class="n">param_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">QUIP_ROOT</span><span class="p">,</span> <span class="s">&#39;share/Parameters&#39;</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="n">name</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s">&#39;filepot&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">name</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s">&#39;callbackpot&#39;</span><span class="p">):</span>
         <span class="c"># FilePot and CallbackPot don&#39;t need XML params</span>
@@ -219,8 +219,8 @@
         <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">child</span><span class="o">.</span><span class="n">toxml</span><span class="p">())</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="c"># Return entire contents of file</span>
-        <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">xml_string</span><span class="p">)</span>
-</div>
+        <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">xml_string</span><span class="p">)</span></div>
+
 <div class="viewcode-block" id="is_interactive_shell"><a class="viewcode-back" href="../../util.html#quippy.util.is_interactive_shell">[docs]</a><span class="k">def</span> <span class="nf">is_interactive_shell</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Return True if we&#39;re running in an interactive shell (including IPython)&quot;&quot;&quot;</span>
 
@@ -231,9 +231,9 @@
     <span class="k">except</span> <span class="ne">NameError</span><span class="p">:</span>
         <span class="k">return</span> <span class="bp">False</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="bp">True</span>
+        <span class="k">return</span> <span class="bp">True</span></div>
 
-</div>
+
 <span class="k">def</span> <span class="nf">read_text_file</span><span class="p">(</span><span class="n">fh</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Read all lines of text from a file</span>
@@ -259,24 +259,24 @@
 <span class="sd">   Return a list of files matching `pattern` sorted by modification time</span>
 <span class="sd">   &quot;&quot;&quot;</span>
    
-   <span class="k">return</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="n">pattern</span><span class="p">),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">f</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">stat</span><span class="p">(</span><span class="n">f</span><span class="p">)</span><span class="o">.</span><span class="n">st_mtime</span><span class="p">)</span>
-</div>
+   <span class="k">return</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="n">pattern</span><span class="p">),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">f</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">stat</span><span class="p">(</span><span class="n">f</span><span class="p">)</span><span class="o">.</span><span class="n">st_mtime</span><span class="p">)</span></div>
+
 <div class="viewcode-block" id="most_recent_file"><a class="viewcode-back" href="../../util.html#quippy.util.most_recent_file">[docs]</a><span class="k">def</span> <span class="nf">most_recent_file</span><span class="p">(</span><span class="n">pattern</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Find the most recent file matching glob `pattern`</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-    <span class="k">return</span> <span class="n">time_ordered_glob</span><span class="p">(</span><span class="n">pattern</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">time_ordered_glob</span><span class="p">(</span><span class="n">pattern</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span></div>
 
-</div>
+
 <div class="viewcode-block" id="most_recent_files"><a class="viewcode-back" href="../../util.html#quippy.util.most_recent_files">[docs]</a><span class="k">def</span> <span class="nf">most_recent_files</span><span class="p">(</span><span class="n">dir_pattern</span><span class="p">,</span> <span class="n">file_pattern</span><span class="p">,</span> <span class="n">suffix</span><span class="o">=</span><span class="s">&#39;&#39;</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Find the most recent file matching file_pattern in each of the directories matching dir_pattern</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="p">[</span><span class="n">most_recent_file</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">dir</span><span class="p">,</span> <span class="n">file_pattern</span><span class="p">))</span><span class="o">+</span><span class="n">suffix</span> <span class="k">for</span> <span class="nb">dir</span> <span class="ow">in</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="n">dir_pattern</span><span class="p">)]</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">most_recent_file</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">dir</span><span class="p">,</span> <span class="n">file_pattern</span><span class="p">))</span><span class="o">+</span><span class="n">suffix</span> <span class="k">for</span> <span class="nb">dir</span> <span class="ow">in</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="n">dir_pattern</span><span class="p">)]</span></div>
 
 
-</div>
+
 <div class="viewcode-block" id="analyse_timings"><a class="viewcode-back" href="../../util.html#quippy.util.analyse_timings">[docs]</a><span class="k">def</span> <span class="nf">analyse_timings</span><span class="p">(</span><span class="n">lines</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Analyse QUIP timing information.</span>
@@ -307,9 +307,9 @@
             <span class="n">summary</span><span class="p">[</span><span class="n">label</span><span class="p">][</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;len&#39;</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">v</span><span class="p">),</span>
                                    <span class="s">&#39;sum&#39;</span><span class="p">:</span> <span class="n">v</span><span class="o">.</span><span class="n">sum</span><span class="p">(),</span>
                                    <span class="s">&#39;mean&#39;</span><span class="p">:</span> <span class="n">v</span><span class="o">.</span><span class="n">mean</span><span class="p">()}</span>
-    <span class="k">return</span> <span class="n">timings</span><span class="p">,</span> <span class="n">summary</span>
+    <span class="k">return</span> <span class="n">timings</span><span class="p">,</span> <span class="n">summary</span></div>
 
-</div>
+
 <div class="viewcode-block" id="write_timings"><a class="viewcode-back" href="../../util.html#quippy.util.write_timings">[docs]</a><span class="k">def</span> <span class="nf">write_timings</span><span class="p">(</span><span class="n">out</span><span class="p">,</span> <span class="n">timings</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="s">&#39;calls&#39;</span><span class="p">,</span> <span class="n">wall_only</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">cpu_only</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Write a formatted summary of QUIP `timings` data to `out`.</span>
@@ -372,14 +372,14 @@
         <li class="right" >
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../../index.html">quippy  documentation</a> &raquo;</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">quippy ac3573e documentation</a> &raquo;</li>
           <li class="nav-item nav-item-1"><a href="../index.html" >Module code</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &copy; Copyright 2008-2015, James Kermode.
-      Last updated on Nov 17, 2015.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+      Last updated on Jan 14, 2016.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.4.
     </div>
   </body>
 </html>

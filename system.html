@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Low-level system routines &mdash; quippy  documentation</title>
+    <title>Low-level system routines &mdash; quippy ac3573e documentation</title>
     
     <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '',
+        VERSION:     'ac3573e',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="quippy  documentation" href="index.html" />
+    <link rel="top" title="quippy ac3573e documentation" href="index.html" />
     <link rel="up" title="Quippy library reference" href="quippy.html" />
     <link rel="prev" title="Units and physical constants" href="units.html" /> 
   </head>
@@ -40,7 +40,7 @@
         <li class="right" >
           <a href="units.html" title="Units and physical constants"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">quippy  documentation</a> &raquo;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">quippy ac3573e documentation</a> &raquo;</li>
           <li class="nav-item nav-item-1"><a href="quippy.html" accesskey="U">Quippy library reference</a> &raquo;</li> 
       </ul>
     </div>
@@ -243,7 +243,7 @@ formatted and unformatted (i.e. binary) I/O.</p>
 </table>
 </td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#quippy.system.system_omp_set_num_threads" title="quippy.system.system_omp_set_num_threads"><code class="xref py py-obj docutils literal"><span class="pre">system_omp_set_num_threads</span></code></a>(threads)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#quippy.system.link_run_directory" title="quippy.system.link_run_directory"><code class="xref py py-obj docutils literal"><span class="pre">link_run_directory</span></code></a>(...)</td>
 <td><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -254,24 +254,13 @@ formatted and unformatted (i.e. binary) I/O.</p>
 </table>
 </td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#quippy.system.link_run_directory" title="quippy.system.link_run_directory"><code class="xref py py-obj docutils literal"><span class="pre">link_run_directory</span></code></a>(...)</td>
-<td><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"></td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#quippy.system.ran_uniform" title="quippy.system.ran_uniform"><code class="xref py py-obj docutils literal"><span class="pre">ran_uniform</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="#quippy.system.ran_uniform" title="quippy.system.ran_uniform"><code class="xref py py-obj docutils literal"><span class="pre">ran_uniform</span></code></a>()</td>
 <td>Return a random real number uniformly distributed in the range [0,1]</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#quippy.system.mpi_id" title="quippy.system.mpi_id"><code class="xref py py-obj docutils literal"><span class="pre">mpi_id</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="#quippy.system.mpi_id" title="quippy.system.mpi_id"><code class="xref py py-obj docutils literal"><span class="pre">mpi_id</span></code></a>()</td>
 <td>Return this processes&#8217; MPI ID</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#quippy.system.progress" title="quippy.system.progress"><code class="xref py py-obj docutils literal"><span class="pre">progress</span></code></a>(total,current,name)</td>
+<tr class="row-even"><td><a class="reference internal" href="#quippy.system.progress" title="quippy.system.progress"><code class="xref py py-obj docutils literal"><span class="pre">progress</span></code></a>(total,current,name)</td>
 <td><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -282,7 +271,7 @@ formatted and unformatted (i.e. binary) I/O.</p>
 </table>
 </td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#quippy.system.linebreak_string" title="quippy.system.linebreak_string"><code class="xref py py-obj docutils literal"><span class="pre">linebreak_string</span></code></a>(str,line_len)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#quippy.system.linebreak_string" title="quippy.system.linebreak_string"><code class="xref py py-obj docutils literal"><span class="pre">linebreak_string</span></code></a>(str,line_len)</td>
 <td><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -293,29 +282,18 @@ formatted and unformatted (i.e. binary) I/O.</p>
 </table>
 </td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#quippy.system.system_finalise" title="quippy.system.system_finalise"><code class="xref py py-obj docutils literal"><span class="pre">system_finalise</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="#quippy.system.system_finalise" title="quippy.system.system_finalise"><code class="xref py py-obj docutils literal"><span class="pre">system_finalise</span></code></a>()</td>
 <td>Shut down gracefully, finalising system objects.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#quippy.system.print_title" title="quippy.system.print_title"><code class="xref py py-obj docutils literal"><span class="pre">print_title</span></code></a>(title,[verbosity])</td>
+<tr class="row-odd"><td><a class="reference internal" href="#quippy.system.print_title" title="quippy.system.print_title"><code class="xref py py-obj docutils literal"><span class="pre">print_title</span></code></a>(title,[verbosity])</td>
 <td>Print a centred title, like this:</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#quippy.system.wait_for_file_to_exist" title="quippy.system.wait_for_file_to_exist"><code class="xref py py-obj docutils literal"><span class="pre">wait_for_file_to_exist</span></code></a>(...)</td>
+<tr class="row-even"><td><a class="reference internal" href="#quippy.system.wait_for_file_to_exist" title="quippy.system.wait_for_file_to_exist"><code class="xref py py-obj docutils literal"><span class="pre">wait_for_file_to_exist</span></code></a>(...)</td>
 <td><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"></td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#quippy.system.system_omp_get_num_threads" title="quippy.system.system_omp_get_num_threads"><code class="xref py py-obj docutils literal"><span class="pre">system_omp_get_num_threads</span></code></a>()</td>
-<td><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
 </tr>
 </tbody>
 </table>
@@ -691,8 +669,8 @@ be set to false.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">__init__initialise</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.
-Class is wrapper around Fortran type <code class="docutils literal"><span class="pre">InOutput</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">__init__initialise</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.
+Class is wrapper around Fortran type <code class="docutils literal"><span class="pre">InOutput</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 <p class="rubric">Attributes</p>
 <table border="1" class="longtable docutils">
 <colgroup>
@@ -735,7 +713,10 @@ Class is wrapper around Fortran type <code class="docutils literal"><span class=
 </table>
 </td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#quippy.system.InOutput.mpi_all_inoutput" title="quippy.system.InOutput.mpi_all_inoutput"><code class="xref py py-obj docutils literal"><span class="pre">mpi_all_inoutput</span></code></a>([value])</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">is_same_fortran_object</span></code>(other)</td>
+<td>Test if <cite>self</cite> and <cite>other</cite> point to the same Fortan object.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#quippy.system.InOutput.mpi_all_inoutput" title="quippy.system.InOutput.mpi_all_inoutput"><code class="xref py py-obj docutils literal"><span class="pre">mpi_all_inoutput</span></code></a>([value])</td>
 <td><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -746,10 +727,10 @@ Class is wrapper around Fortran type <code class="docutils literal"><span class=
 </table>
 </td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#quippy.system.InOutput.parse_line" title="quippy.system.InOutput.parse_line"><code class="xref py py-obj docutils literal"><span class="pre">parse_line</span></code></a>(delimiters,fields,[status])</td>
+<tr class="row-even"><td><a class="reference internal" href="#quippy.system.InOutput.parse_line" title="quippy.system.InOutput.parse_line"><code class="xref py py-obj docutils literal"><span class="pre">parse_line</span></code></a>(delimiters,fields,[status])</td>
 <td>Call parse_string on the next line from a file</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#quippy.system.InOutput.print_mem_info" title="quippy.system.InOutput.print_mem_info"><code class="xref py py-obj docutils literal"><span class="pre">print_mem_info</span></code></a>([file])</td>
+<tr class="row-odd"><td><a class="reference internal" href="#quippy.system.InOutput.print_mem_info" title="quippy.system.InOutput.print_mem_info"><code class="xref py py-obj docutils literal"><span class="pre">print_mem_info</span></code></a>([file])</td>
 <td><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -760,7 +741,7 @@ Class is wrapper around Fortran type <code class="docutils literal"><span class=
 </table>
 </td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#quippy.system.InOutput.print_mpi_id" title="quippy.system.InOutput.print_mpi_id"><code class="xref py py-obj docutils literal"><span class="pre">print_mpi_id</span></code></a>([value])</td>
+<tr class="row-even"><td><a class="reference internal" href="#quippy.system.InOutput.print_mpi_id" title="quippy.system.InOutput.print_mpi_id"><code class="xref py py-obj docutils literal"><span class="pre">print_mpi_id</span></code></a>([value])</td>
 <td><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -771,14 +752,20 @@ Class is wrapper around Fortran type <code class="docutils literal"><span class=
 </table>
 </td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#quippy.system.InOutput.read_ascii" title="quippy.system.InOutput.read_ascii"><code class="xref py py-obj docutils literal"><span class="pre">read_ascii</span></code></a>(*args,&nbsp;**kwargs)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#quippy.system.InOutput.read_ascii" title="quippy.system.InOutput.read_ascii"><code class="xref py py-obj docutils literal"><span class="pre">read_ascii</span></code></a>(*args,&nbsp;**kwargs)</td>
 <td>Wrapper around Fortran interface <code class="docutils literal"><span class="pre">read_ascii</span></code> containing multiple routines:</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#quippy.system.InOutput.read_line" title="quippy.system.InOutput.read_line"><code class="xref py py-obj docutils literal"><span class="pre">read_line</span></code></a>([status])</td>
+<tr class="row-even"><td><a class="reference internal" href="#quippy.system.InOutput.read_line" title="quippy.system.InOutput.read_line"><code class="xref py py-obj docutils literal"><span class="pre">read_line</span></code></a>([status])</td>
 <td>Read a line of text from a file (up to a line break, or 1024 characters).</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#quippy.system.InOutput.rewind" title="quippy.system.InOutput.rewind"><code class="xref py py-obj docutils literal"><span class="pre">rewind</span></code></a>(*args,&nbsp;**kwargs)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#quippy.system.InOutput.rewind" title="quippy.system.InOutput.rewind"><code class="xref py py-obj docutils literal"><span class="pre">rewind</span></code></a>(*args,&nbsp;**kwargs)</td>
 <td>Rewind to the start of this file.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">shallow_copy</span></code>()</td>
+<td>Return a shallow copy of <cite>self</cite>.</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">shallow_copy_from</span></code>(other)</td>
+<td>Transform <cite>self</cite> into a shallow copy of <cite>other</cite>.</td>
 </tr>
 </tbody>
 </table>
@@ -788,7 +775,7 @@ Class is wrapper around Fortran type <code class="docutils literal"><span class=
 <dd><p>inoutput_activate</p>
 <p>Activate an Inoutput object temporarily.</p>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">activate</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">activate</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -805,7 +792,7 @@ formatted and unformatted files.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">backspace</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">backspace</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -813,7 +800,7 @@ formatted and unformatted files.</p>
 <code class="descname">close</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#quippy.system.InOutput.close" title="Permalink to this definition">¶</a></dt>
 <dd><p>Close file but don&#8217;t finalise this Inoutput</p>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">inoutput_close</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">inoutput_close</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -822,7 +809,7 @@ formatted and unformatted files.</p>
 <dd><p>inoutput_deactivate</p>
 <p>Deactivate an Inoutput object temporarily.</p>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">deactivate</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">deactivate</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -837,7 +824,7 @@ formatted and unformatted files.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">inoutput_do_output</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">inoutput_do_output</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -852,7 +839,7 @@ formatted and unformatted files.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">mpi_all_inoutput</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">mpi_all_inoutput</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -874,7 +861,7 @@ formatted and unformatted files.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">parse_line</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">parse_line</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -889,7 +876,7 @@ formatted and unformatted files.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">print_mem_info</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">print_mem_info</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -904,7 +891,7 @@ formatted and unformatted files.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">print_mpi_id</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">print_mpi_id</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -924,7 +911,7 @@ derived types.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>n0</strong> (<em>input int</em>) &#8211; shape(qp_da,0)</li>
-<li><strong>status</strong> (<em>in/output rank-0 array(int,&#8217;i&#8217;), optional</em>) &#8211; </li>
+<li><strong>status</strong> (<em>in/output rank-0 array(int,'i'), optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -933,7 +920,7 @@ derived types.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">reada_real_dim1</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">reada_real_dim1</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -945,7 +932,7 @@ derived types.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>n0</strong> (<em>input int</em>) &#8211; shape(qp_ia,0)</li>
-<li><strong>status</strong> (<em>in/output rank-0 array(int,&#8217;i&#8217;), optional</em>) &#8211; </li>
+<li><strong>status</strong> (<em>in/output rank-0 array(int,'i'), optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -954,7 +941,7 @@ derived types.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">reada_int_dim1</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">reada_int_dim1</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 </div></blockquote>
@@ -983,7 +970,7 @@ end{itemize}</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">read_line</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">read_line</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -991,7 +978,7 @@ end{itemize}</p>
 <code class="descname">rewind</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#quippy.system.InOutput.rewind" title="Permalink to this definition">¶</a></dt>
 <dd><p>Rewind to the start of this file. Works for both formatted and unformatted files.</p>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">rewind</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">rewind</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="attribute">
@@ -1021,7 +1008,7 @@ end{itemize}</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">find_closing_delimiter</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">find_closing_delimiter</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1037,14 +1024,14 @@ end{itemize}</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">pick_up_unit</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">pick_up_unit</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
 <dt id="quippy.system.system_resync_rng">
 <code class="descclassname">quippy.system.</code><code class="descname">system_resync_rng</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#quippy.system.system_resync_rng" title="Permalink to this definition">¶</a></dt>
 <dd><p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">system_resync_rng</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">system_resync_rng</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1062,7 +1049,7 @@ end{itemize}</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">upper_case</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">upper_case</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1091,7 +1078,7 @@ this routine aborts of _MPI is not defined</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">get_mpi_size_rank</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">get_mpi_size_rank</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1125,7 +1112,7 @@ if system_do_timing is false.
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">system_timer</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">system_timer</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1143,7 +1130,7 @@ if system_do_timing is false.
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">verbosity_of_str</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">verbosity_of_str</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1158,7 +1145,7 @@ if system_do_timing is false.
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">reference_true</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">reference_true</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1176,7 +1163,7 @@ if system_do_timing is false.
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">th</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">th</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1196,7 +1183,7 @@ if system_do_timing is false.
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">next_non_separator</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">next_non_separator</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1222,7 +1209,7 @@ MPI process.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">hello_world</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">hello_world</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1242,7 +1229,7 @@ MPI process.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">get_env_var</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">get_env_var</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1259,7 +1246,7 @@ with mean and variance of unity</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">ran_exp</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">ran_exp</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1286,7 +1273,7 @@ gives the total number of fields. <code class="docutils literal"><span class="pr
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">parse_string</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">parse_string</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1310,7 +1297,7 @@ gives the total number of fields. <code class="docutils literal"><span class="pr
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">parse_string_orig</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">parse_string_orig</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1359,7 +1346,7 @@ MPI process.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">system_initialise</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">system_initialise</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1367,7 +1354,7 @@ MPI process.</p>
 <code class="descclassname">quippy.system.</code><code class="descname">verbosity_pop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#quippy.system.verbosity_pop" title="Permalink to this definition">¶</a></dt>
 <dd><p>pop the current verbosity value off the stack</p>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">verbosity_pop</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">verbosity_pop</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1382,7 +1369,7 @@ MPI process.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">get_quippy_running</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">get_quippy_running</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1407,7 +1394,7 @@ Return a string which is the real number <code class="docutils literal"><span cl
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">round</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">round</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1423,7 +1410,7 @@ Return a string which is the real number <code class="docutils literal"><span cl
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">system_get_random_seed</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">system_get_random_seed</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1438,7 +1425,7 @@ Return a string which is the real number <code class="docutils literal"><span cl
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">set_timing</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">set_timing</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1453,14 +1440,14 @@ Return a string which is the real number <code class="docutils literal"><span cl
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">real_sci_format_length</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">real_sci_format_length</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
 <dt id="quippy.system.enable_timing">
 <code class="descclassname">quippy.system.</code><code class="descname">enable_timing</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#quippy.system.enable_timing" title="Permalink to this definition">¶</a></dt>
 <dd><p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">enable_timing</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">enable_timing</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1477,22 +1464,7 @@ Return a string which is the real number <code class="docutils literal"><span cl
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">mem_info</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
-</dd></dl>
-
-<dl class="function">
-<dt id="quippy.system.system_omp_set_num_threads">
-<code class="descclassname">quippy.system.</code><code class="descname">system_omp_set_num_threads</code><span class="sig-paren">(</span><em>threads</em><span class="sig-paren">)</span><a class="headerlink" href="#quippy.system.system_omp_set_num_threads" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>threads</strong> :  input int</td>
-</tr>
-</tbody>
-</table>
-<p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">system_omp_set_num_threads</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">mem_info</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1514,7 +1486,7 @@ Return a string which is the real number <code class="docutils literal"><span cl
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">link_run_directory</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">link_run_directory</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1530,7 +1502,7 @@ Return a string which is the real number <code class="docutils literal"><span cl
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">ran_uniform</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">ran_uniform</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1546,7 +1518,7 @@ Return a string which is the real number <code class="docutils literal"><span cl
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">mpi_id</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">mpi_id</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1564,7 +1536,7 @@ Return a string which is the real number <code class="docutils literal"><span cl
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">progress</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">progress</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1584,7 +1556,7 @@ Return a string which is the real number <code class="docutils literal"><span cl
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">linebreak_string</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">linebreak_string</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1592,7 +1564,7 @@ Return a string which is the real number <code class="docutils literal"><span cl
 <code class="descclassname">quippy.system.</code><code class="descname">system_finalise</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#quippy.system.system_finalise" title="Permalink to this definition">¶</a></dt>
 <dd><p>Shut down gracefully, finalising system objects.</p>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">system_finalise</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">system_finalise</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1611,7 +1583,7 @@ Return a string which is the real number <code class="docutils literal"><span cl
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">print_title</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">print_title</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1630,22 +1602,7 @@ Return a string which is the real number <code class="docutils literal"><span cl
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">wait_for_file_to_exist</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
-</dd></dl>
-
-<dl class="function">
-<dt id="quippy.system.system_omp_get_num_threads">
-<code class="descclassname">quippy.system.</code><code class="descname">system_omp_get_num_threads</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#quippy.system.system_omp_get_num_threads" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><strong>ret_system_omp_get_num_threads</strong> :  int</td>
-</tr>
-</tbody>
-</table>
-<p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">system_omp_get_num_threads</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">wait_for_file_to_exist</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1667,7 +1624,7 @@ if an error occurred during the conversion.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">string_to_logical</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">string_to_logical</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1693,7 +1650,7 @@ tokenizing</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">split_string</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">split_string</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1711,7 +1668,7 @@ tokenizing</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">verbosity_to_str</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">verbosity_to_str</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1733,7 +1690,7 @@ if an error occurred during the conversion.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">string_to_int</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">string_to_int</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1750,7 +1707,7 @@ if an error occurred during the conversion.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">real_format_length</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">real_format_length</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1767,7 +1724,7 @@ if an error occurred during the conversion.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">alloc_trace</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">alloc_trace</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1786,7 +1743,7 @@ if an error occurred during the conversion.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">parallel_print</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">parallel_print</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1803,7 +1760,7 @@ stack and pushing 1 on to verbosity_cascade_stack</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">verbosity_set_minimum</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">verbosity_set_minimum</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1818,7 +1775,7 @@ stack and pushing 1 on to verbosity_cascade_stack</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">current_version</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">current_version</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1835,7 +1792,7 @@ stack and pushing 1 on to verbosity_cascade_stack</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">increase_stack</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">increase_stack</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1851,7 +1808,7 @@ stack and pushing 1 on to verbosity_cascade_stack</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">current_verbosity</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">current_verbosity</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1867,7 +1824,7 @@ stack and pushing 1 on to verbosity_cascade_stack</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">verbosity_push_decrement</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">verbosity_push_decrement</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1882,7 +1839,7 @@ stack and pushing 1 on to verbosity_cascade_stack</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">reference_false</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">reference_false</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1897,7 +1854,7 @@ stack and pushing 1 on to verbosity_cascade_stack</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">cmd_arg_count</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">cmd_arg_count</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1915,7 +1872,7 @@ stack and pushing 1 on to verbosity_cascade_stack</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">abort_on_mpi_error</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">abort_on_mpi_error</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1935,7 +1892,7 @@ stack and pushing 1 on to verbosity_cascade_stack</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">linebreak_string_length</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">linebreak_string_length</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1951,7 +1908,7 @@ stack and pushing 1 on to verbosity_cascade_stack</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">print_warning</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">print_warning</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1971,7 +1928,7 @@ stack and pushing 1 on to verbosity_cascade_stack</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">get_cmd_arg</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">get_cmd_arg</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1989,7 +1946,7 @@ stack and pushing 1 on to verbosity_cascade_stack</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">ran_string</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">ran_string</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1998,7 +1955,7 @@ stack and pushing 1 on to verbosity_cascade_stack</p>
 <dd><p>unset the minimum verbosity value, by popping value from
 stack and popping from verbosity_cascade_stack</p>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">verbosity_unset_minimum</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">verbosity_unset_minimum</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2015,7 +1972,7 @@ stack and popping from verbosity_cascade_stack</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">get_mainlog_errorlog_ptr</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">get_mainlog_errorlog_ptr</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2031,7 +1988,7 @@ stack and popping from verbosity_cascade_stack</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">verbosity_push_increment</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">verbosity_push_increment</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2047,7 +2004,7 @@ stack and popping from verbosity_cascade_stack</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">system_reseed_rng</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">system_reseed_rng</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2063,7 +2020,7 @@ stack and popping from verbosity_cascade_stack</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">mpi_n_procs</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">mpi_n_procs</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2079,7 +2036,7 @@ stack and popping from verbosity_cascade_stack</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">ran</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">ran</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2097,7 +2054,7 @@ stack and popping from verbosity_cascade_stack</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">lower_case</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">lower_case</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2112,7 +2069,7 @@ stack and popping from verbosity_cascade_stack</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">system_set_random_seeds</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">system_set_random_seeds</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2130,7 +2087,7 @@ stack and popping from verbosity_cascade_stack</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">s2a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">s2a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2149,7 +2106,7 @@ Don&#8217;t ever lower the verbosity if verbosity minimum is set,</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">verbosity_push</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">verbosity_push</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2166,7 +2123,7 @@ Don&#8217;t ever lower the verbosity if verbosity minimum is set,</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">int_format_length</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">int_format_length</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2191,7 +2148,7 @@ Don&#8217;t ever lower the verbosity if verbosity minimum is set,</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">pad</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">pad</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2208,7 +2165,7 @@ Don&#8217;t ever lower the verbosity if verbosity minimum is set,</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dealloc_trace</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dealloc_trace</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2230,7 +2187,7 @@ if an error occurred during the conversion.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">string_to_real</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">string_to_real</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2248,7 +2205,7 @@ if an error occurred during the conversion.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">a2s</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">a2s</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2266,7 +2223,7 @@ if an error occurred during the conversion.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">date_and_time_string</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">date_and_time_string</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2281,14 +2238,14 @@ if an error occurred during the conversion.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">get_timing</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">get_timing</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
 <dt id="quippy.system.disable_timing">
 <code class="descclassname">quippy.system.</code><code class="descname">disable_timing</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#quippy.system.disable_timing" title="Permalink to this definition">¶</a></dt>
 <dd><p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">disable_timing</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">disable_timing</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2326,7 +2283,7 @@ no quoting, matching separators, just a simple split</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">split_string_simple</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">split_string_simple</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2344,7 +2301,7 @@ no quoting, matching separators, just a simple split</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">is_file_readable</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">is_file_readable</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2362,7 +2319,7 @@ no quoting, matching separators, just a simple split</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">current_times</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">current_times</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2378,7 +2335,7 @@ no quoting, matching separators, just a simple split</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">ran_normal</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">ran_normal</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2400,7 +2357,7 @@ no quoting, matching separators, just a simple split</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">make_run_directory</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">make_run_directory</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2429,7 +2386,7 @@ the default value</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">optional_default_r</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">optional_default_r</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2450,7 +2407,7 @@ the default value</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">optional_default_l</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">optional_default_l</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2471,7 +2428,7 @@ the default value</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">optional_default_i</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">optional_default_i</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2492,7 +2449,7 @@ the default value</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">optional_default_c</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">optional_default_c</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2503,8 +2460,8 @@ the default value</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>def</strong> (<em>input rank-1 array(&#8216;i&#8217;) with bounds (qp_n0)</em>) &#8211; </li>
-<li><strong>opt_val</strong> (<em>input rank-1 array(&#8216;i&#8217;) with bounds (size(qp_def)), optional</em>) &#8211; </li>
+<li><strong>def</strong> (<em>input rank-1 array('i') with bounds (qp_n0)</em>) &#8211; </li>
+<li><strong>opt_val</strong> (<em>input rank-1 array('i') with bounds (size(qp_def)), optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -2513,7 +2470,7 @@ the default value</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">optional_default_ia</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">optional_default_ia</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2524,8 +2481,8 @@ the default value</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>def</strong> (<em>input rank-1 array(&#8216;d&#8217;) with bounds (qp_n0)</em>) &#8211; </li>
-<li><strong>opt_val</strong> (<em>input rank-1 array(&#8216;d&#8217;) with bounds (size(qp_def)), optional</em>) &#8211; </li>
+<li><strong>def</strong> (<em>input rank-1 array('d') with bounds (qp_n0)</em>) &#8211; </li>
+<li><strong>opt_val</strong> (<em>input rank-1 array('d') with bounds (size(qp_def)), optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -2534,7 +2491,7 @@ the default value</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">optional_default_ra</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">optional_default_ra</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2545,8 +2502,8 @@ the default value</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>def</strong> (<em>input rank-2 array(&#8216;S&#8217;) with bounds (qp_n0,(*))</em>) &#8211; </li>
-<li><strong>opt_val</strong> (<em>input rank-2 array(&#8216;S&#8217;) with bounds (qp_n1,(*)), optional</em>) &#8211; </li>
+<li><strong>def</strong> (<em>input rank-2 array('S') with bounds (qp_n0,(*))</em>) &#8211; </li>
+<li><strong>opt_val</strong> (<em>input rank-2 array('S') with bounds (qp_n1,(*)), optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -2555,7 +2512,7 @@ the default value</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">optional_default_ca</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">optional_default_ca</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 </div></blockquote>
@@ -2576,7 +2533,7 @@ the default value</p>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>string</strong> (<em>input string(len=-1)</em>) &#8211; </li>
 <li><strong>n0</strong> (<em>input int</em>) &#8211; shape(qp_real1d,0)</li>
-<li><strong>error</strong> (<em>in/output rank-0 array(int,&#8217;i&#8217;), optional</em>) &#8211; </li>
+<li><strong>error</strong> (<em>in/output rank-0 array(int,'i'), optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -2585,7 +2542,7 @@ the default value</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">string_to_real1d</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">string_to_real1d</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2597,7 +2554,7 @@ the default value</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>string</strong> (<em>input string(len=-1)</em>) &#8211; </li>
-<li><strong>error</strong> (<em>in/output rank-0 array(int,&#8217;i&#8217;), optional</em>) &#8211; </li>
+<li><strong>error</strong> (<em>in/output rank-0 array(int,'i'), optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -2606,7 +2563,7 @@ the default value</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">string_to_integer_sub</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">string_to_integer_sub</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2618,7 +2575,7 @@ the default value</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>string</strong> (<em>input string(len=-1)</em>) &#8211; </li>
-<li><strong>error</strong> (<em>in/output rank-0 array(int,&#8217;i&#8217;), optional</em>) &#8211; </li>
+<li><strong>error</strong> (<em>in/output rank-0 array(int,'i'), optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -2627,7 +2584,7 @@ the default value</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">string_to_real_sub</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">string_to_real_sub</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2640,7 +2597,7 @@ the default value</p>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>string</strong> (<em>input string(len=-1)</em>) &#8211; </li>
 <li><strong>n0</strong> (<em>input int</em>) &#8211; shape(qp_integer1d,0)</li>
-<li><strong>error</strong> (<em>in/output rank-0 array(int,&#8217;i&#8217;), optional</em>) &#8211; </li>
+<li><strong>error</strong> (<em>in/output rank-0 array(int,'i'), optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -2649,7 +2606,7 @@ the default value</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">string_to_integer1d</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">string_to_integer1d</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2662,7 +2619,7 @@ the default value</p>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>string</strong> (<em>input string(len=-1)</em>) &#8211; </li>
 <li><strong>n0</strong> (<em>input int</em>) &#8211; shape(qp_logical1d,0)</li>
-<li><strong>error</strong> (<em>in/output rank-0 array(int,&#8217;i&#8217;), optional</em>) &#8211; </li>
+<li><strong>error</strong> (<em>in/output rank-0 array(int,'i'), optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -2671,7 +2628,7 @@ the default value</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">string_to_logical1d</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">string_to_logical1d</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2683,7 +2640,7 @@ the default value</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>string</strong> (<em>input string(len=-1)</em>) &#8211; </li>
-<li><strong>error</strong> (<em>in/output rank-0 array(int,&#8217;i&#8217;), optional</em>) &#8211; </li>
+<li><strong>error</strong> (<em>in/output rank-0 array(int,'i'), optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -2692,7 +2649,7 @@ the default value</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">string_to_logical_sub</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">string_to_logical_sub</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 </div></blockquote>
@@ -2726,7 +2683,7 @@ Other user-defined types define the Print interface in the same way.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">inoutput_print_integer</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">inoutput_print_integer</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2747,7 +2704,7 @@ Other user-defined types define the Print interface in the same way.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">inoutput_print_string</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">inoutput_print_string</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2758,7 +2715,7 @@ Other user-defined types define the Print interface in the same way.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>char_a</strong> (<em>input rank-2 array(&#8216;S&#8217;) with bounds (qp_n0,(*))</em>) &#8211; </li>
+<li><strong>char_a</strong> (<em>input rank-2 array('S') with bounds (qp_n0,(*))</em>) &#8211; </li>
 <li><strong>verbosity</strong> (<em>input int, optional</em>) &#8211; </li>
 <li><strong>file</strong> (<a class="reference internal" href="#quippy.system.InOutput" title="quippy.system.InOutput"><code class="xref py py-class docutils literal"><span class="pre">InOutput</span></code></a> object, optional) &#8211; </li>
 </ul>
@@ -2766,7 +2723,7 @@ Other user-defined types define the Print interface in the same way.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">inoutput_print_char_array</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">inoutput_print_char_array</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2785,7 +2742,7 @@ Other user-defined types define the Print interface in the same way.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">inoutput_print_logical</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">inoutput_print_logical</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2806,7 +2763,7 @@ Other user-defined types define the Print interface in the same way.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">inoutput_print_real</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/System.f95">libAtoms/System.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">inoutput_print_real</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/System.f95">src/libAtoms/System.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2817,14 +2774,14 @@ Other user-defined types define the Print interface in the same way.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>this</strong> (<em>input rank-2 array(&#8216;i&#8217;) with bounds (qp_n0,qp_n1)</em>) &#8211; </li>
+<li><strong>this</strong> (<em>input rank-2 array('i') with bounds (qp_n0,qp_n1)</em>) &#8211; </li>
 <li><strong>verbosity</strong> (<em>input int, optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">int_matrix_print_mainlog</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/linearalgebra.f95">libAtoms/linearalgebra.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">int_matrix_print_mainlog</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/linearalgebra.f95">src/libAtoms/linearalgebra.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2835,14 +2792,14 @@ Other user-defined types define the Print interface in the same way.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>this</strong> (<em>input rank-2 array(&#8216;D&#8217;) with bounds (qp_n0,qp_n1)</em>) &#8211; </li>
+<li><strong>this</strong> (<em>input rank-2 array('D') with bounds (qp_n0,qp_n1)</em>) &#8211; </li>
 <li><strong>verbosity</strong> (<em>input int, optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">matrix_z_print_mainlog</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/linearalgebra.f95">libAtoms/linearalgebra.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">matrix_z_print_mainlog</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/linearalgebra.f95">src/libAtoms/linearalgebra.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2853,14 +2810,14 @@ Other user-defined types define the Print interface in the same way.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>this</strong> (<em>input rank-1 array(&#8216;d&#8217;) with bounds (qp_n0)</em>) &#8211; </li>
+<li><strong>this</strong> (<em>input rank-1 array('d') with bounds (qp_n0)</em>) &#8211; </li>
 <li><strong>verbosity</strong> (<em>input int, optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">vector_print_mainlog</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/linearalgebra.f95">libAtoms/linearalgebra.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">vector_print_mainlog</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/linearalgebra.f95">src/libAtoms/linearalgebra.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2871,14 +2828,14 @@ Other user-defined types define the Print interface in the same way.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>this</strong> (<em>input rank-1 array(&#8216;i&#8217;) with bounds (qp_n0)</em>) &#8211; </li>
+<li><strong>this</strong> (<em>input rank-1 array('i') with bounds (qp_n0)</em>) &#8211; </li>
 <li><strong>verbosity</strong> (<em>input int, optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">logical_array_print_mainlog</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/linearalgebra.f95">libAtoms/linearalgebra.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">logical_array_print_mainlog</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/linearalgebra.f95">src/libAtoms/linearalgebra.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2889,7 +2846,7 @@ Other user-defined types define the Print interface in the same way.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>this</strong> (<em>input rank-1 array(&#8216;d&#8217;) with bounds (qp_n0)</em>) &#8211; </li>
+<li><strong>this</strong> (<em>input rank-1 array('d') with bounds (qp_n0)</em>) &#8211; </li>
 <li><strong>verbosity</strong> (<em>input int, optional</em>) &#8211; </li>
 <li><strong>file</strong> (<a class="reference internal" href="#quippy.system.InOutput" title="quippy.system.InOutput"><code class="xref py py-class docutils literal"><span class="pre">InOutput</span></code></a> object) &#8211; </li>
 </ul>
@@ -2897,7 +2854,7 @@ Other user-defined types define the Print interface in the same way.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">vector_print</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/linearalgebra.f95">libAtoms/linearalgebra.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">vector_print</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/linearalgebra.f95">src/libAtoms/linearalgebra.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2908,7 +2865,7 @@ Other user-defined types define the Print interface in the same way.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>this</strong> (<em>input rank-2 array(&#8216;D&#8217;) with bounds (qp_n0,qp_n1)</em>) &#8211; </li>
+<li><strong>this</strong> (<em>input rank-2 array('D') with bounds (qp_n0,qp_n1)</em>) &#8211; </li>
 <li><strong>verbosity</strong> (<em>input int, optional</em>) &#8211; </li>
 <li><strong>file</strong> (<a class="reference internal" href="#quippy.system.InOutput" title="quippy.system.InOutput"><code class="xref py py-class docutils literal"><span class="pre">InOutput</span></code></a> object) &#8211; </li>
 </ul>
@@ -2916,7 +2873,7 @@ Other user-defined types define the Print interface in the same way.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">matrix_z_print</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/linearalgebra.f95">libAtoms/linearalgebra.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">matrix_z_print</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/linearalgebra.f95">src/libAtoms/linearalgebra.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2927,14 +2884,14 @@ Other user-defined types define the Print interface in the same way.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>this</strong> (<em>input rank-1 array(&#8216;D&#8217;) with bounds (qp_n0)</em>) &#8211; </li>
+<li><strong>this</strong> (<em>input rank-1 array('D') with bounds (qp_n0)</em>) &#8211; </li>
 <li><strong>verbosity</strong> (<em>input int, optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">vector_z_print_mainlog</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/linearalgebra.f95">libAtoms/linearalgebra.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">vector_z_print_mainlog</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/linearalgebra.f95">src/libAtoms/linearalgebra.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2945,7 +2902,7 @@ Other user-defined types define the Print interface in the same way.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>this</strong> (<em>input rank-2 array(&#8216;i&#8217;) with bounds (qp_n0,qp_n1)</em>) &#8211; </li>
+<li><strong>this</strong> (<em>input rank-2 array('i') with bounds (qp_n0,qp_n1)</em>) &#8211; </li>
 <li><strong>verbosity</strong> (<em>input int, optional</em>) &#8211; </li>
 <li><strong>file</strong> (<a class="reference internal" href="#quippy.system.InOutput" title="quippy.system.InOutput"><code class="xref py py-class docutils literal"><span class="pre">InOutput</span></code></a> object) &#8211; </li>
 </ul>
@@ -2953,7 +2910,7 @@ Other user-defined types define the Print interface in the same way.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">int_matrix_print</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/linearalgebra.f95">libAtoms/linearalgebra.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">int_matrix_print</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/linearalgebra.f95">src/libAtoms/linearalgebra.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2964,7 +2921,7 @@ Other user-defined types define the Print interface in the same way.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>this</strong> (<em>input rank-1 array(&#8216;i&#8217;) with bounds (qp_n0)</em>) &#8211; </li>
+<li><strong>this</strong> (<em>input rank-1 array('i') with bounds (qp_n0)</em>) &#8211; </li>
 <li><strong>verbosity</strong> (<em>input int, optional</em>) &#8211; </li>
 <li><strong>file</strong> (<a class="reference internal" href="#quippy.system.InOutput" title="quippy.system.InOutput"><code class="xref py py-class docutils literal"><span class="pre">InOutput</span></code></a> object) &#8211; </li>
 </ul>
@@ -2972,7 +2929,7 @@ Other user-defined types define the Print interface in the same way.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">integer_array_print</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/linearalgebra.f95">libAtoms/linearalgebra.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">integer_array_print</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/linearalgebra.f95">src/libAtoms/linearalgebra.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -2983,14 +2940,14 @@ Other user-defined types define the Print interface in the same way.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>this</strong> (<em>input rank-2 array(&#8216;d&#8217;) with bounds (qp_n0,qp_n1)</em>) &#8211; </li>
+<li><strong>this</strong> (<em>input rank-2 array('d') with bounds (qp_n0,qp_n1)</em>) &#8211; </li>
 <li><strong>verbosity</strong> (<em>input int, optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">matrix_print_mainlog</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/linearalgebra.f95">libAtoms/linearalgebra.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">matrix_print_mainlog</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/linearalgebra.f95">src/libAtoms/linearalgebra.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -3001,7 +2958,7 @@ Other user-defined types define the Print interface in the same way.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>this</strong> (<em>input rank-1 array(&#8216;i&#8217;) with bounds (qp_n0)</em>) &#8211; </li>
+<li><strong>this</strong> (<em>input rank-1 array('i') with bounds (qp_n0)</em>) &#8211; </li>
 <li><strong>verbosity</strong> (<em>input int, optional</em>) &#8211; </li>
 <li><strong>file</strong> (<a class="reference internal" href="#quippy.system.InOutput" title="quippy.system.InOutput"><code class="xref py py-class docutils literal"><span class="pre">InOutput</span></code></a> object) &#8211; </li>
 </ul>
@@ -3009,7 +2966,7 @@ Other user-defined types define the Print interface in the same way.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">logical_array_print</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/linearalgebra.f95">libAtoms/linearalgebra.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">logical_array_print</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/linearalgebra.f95">src/libAtoms/linearalgebra.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -3020,7 +2977,7 @@ Other user-defined types define the Print interface in the same way.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>this</strong> (<em>input rank-1 array(&#8216;D&#8217;) with bounds (qp_n0)</em>) &#8211; </li>
+<li><strong>this</strong> (<em>input rank-1 array('D') with bounds (qp_n0)</em>) &#8211; </li>
 <li><strong>verbosity</strong> (<em>input int, optional</em>) &#8211; </li>
 <li><strong>file</strong> (<a class="reference internal" href="#quippy.system.InOutput" title="quippy.system.InOutput"><code class="xref py py-class docutils literal"><span class="pre">InOutput</span></code></a> object) &#8211; </li>
 </ul>
@@ -3028,7 +2985,7 @@ Other user-defined types define the Print interface in the same way.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">vector_z_print</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/linearalgebra.f95">libAtoms/linearalgebra.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">vector_z_print</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/linearalgebra.f95">src/libAtoms/linearalgebra.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -3039,14 +2996,14 @@ Other user-defined types define the Print interface in the same way.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>this</strong> (<em>input rank-1 array(&#8216;i&#8217;) with bounds (qp_n0)</em>) &#8211; </li>
+<li><strong>this</strong> (<em>input rank-1 array('i') with bounds (qp_n0)</em>) &#8211; </li>
 <li><strong>verbosity</strong> (<em>input int, optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">integer_array_print_mainlog</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/linearalgebra.f95">libAtoms/linearalgebra.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">integer_array_print_mainlog</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/linearalgebra.f95">src/libAtoms/linearalgebra.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -3057,7 +3014,7 @@ Other user-defined types define the Print interface in the same way.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>this</strong> (<em>input rank-2 array(&#8216;d&#8217;) with bounds (qp_n0,qp_n1)</em>) &#8211; </li>
+<li><strong>this</strong> (<em>input rank-2 array('d') with bounds (qp_n0,qp_n1)</em>) &#8211; </li>
 <li><strong>verbosity</strong> (<em>input int, optional</em>) &#8211; </li>
 <li><strong>file</strong> (<a class="reference internal" href="#quippy.system.InOutput" title="quippy.system.InOutput"><code class="xref py py-class docutils literal"><span class="pre">InOutput</span></code></a> object) &#8211; </li>
 <li><strong>always</strong> (<em>input int, optional</em>) &#8211; </li>
@@ -3066,7 +3023,7 @@ Other user-defined types define the Print interface in the same way.</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">matrix_print</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/linearalgebra.f95">libAtoms/linearalgebra.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">matrix_print</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/linearalgebra.f95">src/libAtoms/linearalgebra.f95</a>.</p>
 </dd></dl>
 
 </div></blockquote>
@@ -3092,14 +3049,14 @@ Other user-defined types define the Print interface in the same way.</p>
         <li class="right" >
           <a href="units.html" title="Units and physical constants"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">quippy  documentation</a> &raquo;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">quippy ac3573e documentation</a> &raquo;</li>
           <li class="nav-item nav-item-1"><a href="quippy.html" >Quippy library reference</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &copy; Copyright 2008-2015, James Kermode.
-      Last updated on Nov 17, 2015.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+      Last updated on Jan 14, 2016.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.4.
     </div>
   </body>
 </html>

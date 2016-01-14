@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>quippy.castep &mdash; quippy  documentation</title>
+    <title>quippy.castep &mdash; quippy ac3573e documentation</title>
     
     <link rel="stylesheet" href="../../_static/sphinxdoc.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '',
+        VERSION:     'ac3573e',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="top" title="quippy  documentation" href="../../index.html" />
+    <link rel="top" title="quippy ac3573e documentation" href="../../index.html" />
     <link rel="up" title="Module code" href="../index.html" /> 
   </head>
   <body role="document">
@@ -36,7 +36,7 @@
         <li class="right" >
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../../index.html">quippy  documentation</a> &raquo;</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">quippy ac3573e documentation</a> &raquo;</li>
           <li class="nav-item nav-item-1"><a href="../index.html" accesskey="U">Module code</a> &raquo;</li> 
       </ul>
     </div>
@@ -330,9 +330,9 @@
                             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s">&#39;Unknown CELL keyword </span><span class="si">%s</span><span class="s">&#39;</span><span class="o">%</span> <span class="n">key</span><span class="p">)</span>
                         <span class="bp">self</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">fields</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
                     <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
-                        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s">&#39;Error parsing cell file line: </span><span class="si">%s</span><span class="s">&#39;</span> <span class="o">%</span> <span class="n">line</span><span class="p">)</span>
+                        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s">&#39;Error parsing cell file line: </span><span class="si">%s</span><span class="s">&#39;</span> <span class="o">%</span> <span class="n">line</span><span class="p">)</span></div>
 
-</div>
+
     <span class="k">def</span> <span class="nf">read_xml</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xml</span><span class="p">):</span>
         <span class="n">els</span> <span class="o">=</span> <span class="n">xml</span><span class="o">.</span><span class="n">documentElement</span><span class="o">.</span><span class="n">getElementsByTagName</span><span class="p">(</span><span class="s">&#39;castep_cell&#39;</span><span class="p">)</span>
 
@@ -364,9 +364,9 @@
                 <span class="n">value</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
                 <span class="n">value</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&#39;[&#39;</span><span class="p">,</span><span class="s">&#39;&#39;</span><span class="p">)</span>
                 <span class="n">value</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&#39;]&#39;</span><span class="p">,</span><span class="s">&#39;&#39;</span><span class="p">)</span>
-                <span class="n">cellfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;</span><span class="si">%s</span><span class="s">  </span><span class="si">%s</span><span class="se">\n</span><span class="s">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">))</span>
+                <span class="n">cellfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;</span><span class="si">%s</span><span class="s">  </span><span class="si">%s</span><span class="se">\n</span><span class="s">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">))</span></div>
 
-</div>
+
     <span class="k">def</span> <span class="nf">to_atoms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">has_key</span><span class="p">(</span><span class="s">&#39;LATTICE_CART&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">has_key</span><span class="p">(</span><span class="s">&#39;LATTICE_ABC&#39;</span><span class="p">):</span>
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s">&#39;cell is missing LATTICE_CART and LATTICE_ABC blocks&#39;</span><span class="p">)</span>
@@ -468,8 +468,8 @@
     <span class="nd">@atoms_reader</span><span class="p">(</span><span class="s">&#39;cell&#39;</span><span class="p">)</span>
     <span class="k">def</span> <span class="nf">cellreader</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">format</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
         <span class="bp">self</span> <span class="o">=</span> <span class="n">CastepCell</span><span class="p">(</span><span class="n">source</span><span class="p">)</span>
-        <span class="k">yield</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_atoms</span><span class="p">()</span>
-</div>
+        <span class="k">yield</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_atoms</span><span class="p">()</span></div>
+
 <span class="k">class</span> <span class="nc">CastepCellWriter</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dest</span><span class="p">):</span>
         <span class="k">if</span> <span class="n">dest</span> <span class="o">==</span> <span class="s">&#39;stdout&#39;</span><span class="p">:</span> <span class="n">dest</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span>
@@ -533,8 +533,8 @@
                 <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s">&#39;Unknown PARAMETERS keyword </span><span class="si">%s</span><span class="s">&#39;</span> <span class="o">%</span> <span class="n">key</span><span class="p">)</span>
             <span class="n">value</span> <span class="o">=</span> <span class="s">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">fields</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
             <span class="n">value</span> <span class="o">=</span> <span class="n">castep_value_map</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
-            <span class="bp">self</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
-</div>
+            <span class="bp">self</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span></div>
+
     <span class="k">def</span> <span class="nf">read_xml</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xml</span><span class="p">):</span>
         <span class="n">els</span> <span class="o">=</span> <span class="n">xml</span><span class="o">.</span><span class="n">documentElement</span><span class="o">.</span><span class="n">getElementsByTagName</span><span class="p">(</span><span class="s">&#39;castep_param&#39;</span><span class="p">)</span>
 
@@ -584,8 +584,8 @@
             <span class="n">param_lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s">&#39;</span><span class="si">%s</span><span class="s"> = </span><span class="si">%s</span><span class="s">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">param_lookup</span><span class="p">[</span><span class="n">key</span><span class="p">],</span> <span class="n">value</span><span class="p">))</span>
             <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
 
-        <span class="bp">self</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">param_lines</span><span class="p">)</span>
-</div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">param_lines</span><span class="p">)</span></div>
+
     <span class="k">def</span> <span class="nf">update_from_atoms</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">at</span><span class="p">):</span>
         <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">at</span><span class="o">.</span><span class="n">params</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">p</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="n">valid_parameters_keywords</span><span class="p">:</span>
@@ -599,8 +599,8 @@
 
         <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">iteritems</span><span class="p">():</span>
             <span class="n">value</span> <span class="o">=</span> <span class="n">castep_output_map</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
-            <span class="n">paramfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;</span><span class="si">%s</span><span class="s"> = </span><span class="si">%s</span><span class="se">\n</span><span class="s">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">))</span>
-</div></div>
+            <span class="n">paramfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;</span><span class="si">%s</span><span class="s"> = </span><span class="si">%s</span><span class="se">\n</span><span class="s">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">))</span></div></div>
+
 <span class="nd">@atoms_reader</span><span class="p">(</span><span class="s">&#39;geom&#39;</span><span class="p">)</span>
 <span class="nd">@atoms_reader</span><span class="p">(</span><span class="s">&#39;md&#39;</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">CastepGeomMDReader</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">atoms_ref</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">format</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
@@ -1306,9 +1306,9 @@
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s">&#39;spin polarised set to false but got odd number of electrons!&#39;</span><span class="p">)</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">param</span><span class="o">.</span><span class="n">has_key</span><span class="p">(</span><span class="s">&#39;spin_polarised&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">param</span><span class="p">[</span><span class="s">&#39;spin_polarised&#39;</span><span class="p">]</span> <span class="ow">and</span> \
             <span class="nb">int</span><span class="p">(</span><span class="n">n_electrons</span><span class="p">)</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
-            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s">&#39;spin polarised set to true but got even number of electrons!&#39;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s">&#39;spin polarised set to true but got even number of electrons!&#39;</span><span class="p">)</span></div>
 
-</div>
+
 <div class="viewcode-block" id="run_castep"><a class="viewcode-back" href="../../io.html#quippy.castep.run_castep">[docs]</a><span class="k">def</span> <span class="nf">run_castep</span><span class="p">(</span><span class="n">cell</span><span class="p">,</span> <span class="n">param</span><span class="p">,</span> <span class="n">stem</span><span class="p">,</span> <span class="n">castep</span><span class="p">,</span> <span class="n">castep_log</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">save_all_check_files</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">save_all_input_files</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">test_mode</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">copy_in_files</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">subdir</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="s">&quot;Invoke castep and return True if it completed successfully&quot;</span>
 
@@ -1388,8 +1388,8 @@
     <span class="k">finally</span><span class="p">:</span>
         <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">orig_dir</span><span class="p">)</span>
 
-    <span class="k">return</span> <span class="ow">not</span> <span class="n">got_error</span>
-</div>
+    <span class="k">return</span> <span class="ow">not</span> <span class="n">got_error</span></div>
+
 <span class="kn">from</span> <span class="nn">quippy</span> <span class="kn">import</span> <span class="n">Potential</span>
 
 <span class="k">class</span> <span class="nc">CastepPotential</span><span class="p">(</span><span class="n">Potential</span><span class="p">):</span>
@@ -1513,8 +1513,8 @@
     <span class="k">for</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="n">k</span><span class="p">,</span><span class="n">value</span><span class="p">)</span> <span class="ow">in</span> <span class="n">pot</span><span class="p">:</span>
         <span class="n">data</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">),</span><span class="nb">int</span><span class="p">(</span><span class="n">j</span><span class="p">),</span><span class="nb">int</span><span class="p">(</span><span class="n">k</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
 
-    <span class="k">return</span> <span class="n">data</span>
-</div>
+    <span class="k">return</span> <span class="n">data</span></div>
+
 <div class="viewcode-block" id="read_formatted_density"><a class="viewcode-back" href="../../io.html#quippy.castep.read_formatted_density">[docs]</a><span class="k">def</span> <span class="nf">read_formatted_density</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Load a potential write by CASTEP pot_write_formatted() routine, and convert</span>
 <span class="sd">    to a 3-dimensional FortranArray suitable for writing to a .cube file.&quot;&quot;&quot;</span>
@@ -1541,14 +1541,14 @@
         <li class="right" >
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../../index.html">quippy  documentation</a> &raquo;</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">quippy ac3573e documentation</a> &raquo;</li>
           <li class="nav-item nav-item-1"><a href="../index.html" >Module code</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &copy; Copyright 2008-2015, James Kermode.
-      Last updated on Nov 17, 2015.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+      Last updated on Jan 14, 2016.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.4.
     </div>
   </body>
 </html>

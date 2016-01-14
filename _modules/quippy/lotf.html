@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>quippy.lotf &mdash; quippy  documentation</title>
+    <title>quippy.lotf &mdash; quippy ac3573e documentation</title>
     
     <link rel="stylesheet" href="../../_static/sphinxdoc.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '',
+        VERSION:     'ac3573e',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="top" title="quippy  documentation" href="../../index.html" />
+    <link rel="top" title="quippy ac3573e documentation" href="../../index.html" />
     <link rel="up" title="Module code" href="../index.html" /> 
   </head>
   <body role="document">
@@ -36,7 +36,7 @@
         <li class="right" >
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../../index.html">quippy  documentation</a> &raquo;</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">quippy ac3573e documentation</a> &raquo;</li>
           <li class="nav-item nav-item-1"><a href="../index.html" accesskey="U">Module code</a> &raquo;</li> 
       </ul>
     </div>
@@ -149,23 +149,23 @@
 <span class="sd">        :class:`~.Atoms` object representing the current state of the</span>
 <span class="sd">        dynamical system.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">qm_update_func</span> <span class="o">=</span> <span class="n">qm_update_func</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">qm_update_func</span> <span class="o">=</span> <span class="n">qm_update_func</span></div>
 
-</div>
+
 <div class="viewcode-block" id="LOTFDynamics.get_time"><a class="viewcode-back" href="../../lotf.html#quippy.lotf.LOTFDynamics.get_time">[docs]</a>    <span class="k">def</span> <span class="nf">get_time</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Return current time (in ASE time units)</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">nsteps</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">dt</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">nsteps</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">dt</span></div>
 
-</div>
+
 <div class="viewcode-block" id="LOTFDynamics.get_number_of_steps"><a class="viewcode-back" href="../../lotf.html#quippy.lotf.LOTFDynamics.get_number_of_steps">[docs]</a>    <span class="k">def</span> <span class="nf">get_number_of_steps</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Return number of steps taken since start of dynamics</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">nsteps</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">nsteps</span></div>
 
-</div>
+
 <div class="viewcode-block" id="LOTFDynamics.advance_verlet"><a class="viewcode-back" href="../../lotf.html#quippy.lotf.LOTFDynamics.advance_verlet">[docs]</a>    <span class="k">def</span> <span class="nf">advance_verlet</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Single advance using velocity Verlet with forces `f`</span>
@@ -190,11 +190,11 @@
                             <span class="bp">self</span><span class="o">.</span><span class="n">dt</span> <span class="o">*</span> <span class="n">p</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">atoms</span><span class="o">.</span><span class="n">get_masses</span><span class="p">()[:,</span><span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">])</span>
 
         <span class="c"># p(t+dt/2) = p(t) + F(t) dt/2</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">atoms</span><span class="o">.</span><span class="n">set_momenta</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">atoms</span><span class="o">.</span><span class="n">set_momenta</span><span class="p">(</span><span class="n">p</span><span class="p">)</span></div>
 
         <span class="c"># now we have p(t+dt/2), r(t+dt)</span>
 
-</div>
+
     <span class="nd">@property</span>
     <span class="k">def</span> <span class="nf">state_label</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
@@ -234,9 +234,9 @@
         <span class="n">saved_np_random_state</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">get_state</span><span class="p">()</span>
         <span class="n">saved_state</span> <span class="o">=</span> <span class="p">(</span><span class="n">saved_positions</span><span class="p">,</span> <span class="n">saved_momenta</span><span class="p">,</span> <span class="n">saved_nsteps</span><span class="p">,</span>
                        <span class="n">saved_seed</span><span class="p">,</span> <span class="n">saved_np_random_state</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">saved_state</span>
+        <span class="k">return</span> <span class="n">saved_state</span></div>
                        
-</div>
+
 <div class="viewcode-block" id="LOTFDynamics.set_state"><a class="viewcode-back" href="../../lotf.html#quippy.lotf.LOTFDynamics.set_state">[docs]</a>    <span class="k">def</span> <span class="nf">set_state</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">saved_state</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Restore dynamics to a previously saved state.</span>
@@ -249,9 +249,9 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">atoms</span><span class="o">.</span><span class="n">set_array</span><span class="p">(</span><span class="s">&#39;momenta&#39;</span><span class="p">,</span> <span class="n">saved_momenta</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">nsteps</span> <span class="o">=</span> <span class="n">saved_nsteps</span>
         <span class="n">system_set_random_seeds</span><span class="p">(</span><span class="n">saved_seed</span><span class="p">)</span>
-        <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">set_state</span><span class="p">(</span><span class="n">saved_np_random_state</span><span class="p">)</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">set_state</span><span class="p">(</span><span class="n">saved_np_random_state</span><span class="p">)</span></div>
 
-</div>
+
 <div class="viewcode-block" id="LOTFDynamics.step"><a class="viewcode-back" href="../../lotf.html#quippy.lotf.LOTFDynamics.step">[docs]</a>    <span class="k">def</span> <span class="nf">step</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Advance the dynamics by one LOTF cycle</span>
@@ -340,9 +340,9 @@
 
             <span class="bp">self</span><span class="o">.</span><span class="n">call_observers</span><span class="p">()</span>
         <span class="n">system_timer</span><span class="p">(</span><span class="s">&#39;lotf_interpolate&#39;</span><span class="p">)</span>
-        <span class="n">system_timer</span><span class="p">(</span><span class="s">&#39;lotf_step&#39;</span><span class="p">)</span>
+        <span class="n">system_timer</span><span class="p">(</span><span class="s">&#39;lotf_step&#39;</span><span class="p">)</span></div>
 
-</div>
+
 <div class="viewcode-block" id="LOTFDynamics.run"><a class="viewcode-back" href="../../lotf.html#quippy.lotf.LOTFDynamics.run">[docs]</a>    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">steps</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Run LOTF dynamics forwards for given number of small time steps</span>
@@ -351,9 +351,9 @@
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="n">lotf_steps</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">steps</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">extrapolate_steps</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">lotf_steps</span><span class="p">):</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">step</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">step</span><span class="p">()</span></div>
    
-</div>
+
 <div class="viewcode-block" id="LOTFDynamics.initialise_adjustable_potential"><a class="viewcode-back" href="../../lotf.html#quippy.lotf.LOTFDynamics.initialise_adjustable_potential">[docs]</a>    <span class="k">def</span> <span class="nf">initialise_adjustable_potential</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">atoms</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Bootstrap the potential by doing a QM calculation and fitting the adj. pot.</span>
@@ -366,9 +366,9 @@
                       <span class="n">lotf_do_init</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
                       <span class="n">lotf_do_fit</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
                       <span class="n">lotf_do_interp</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">calc</span><span class="o">.</span><span class="n">get_forces</span><span class="p">(</span><span class="n">atoms</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">calc</span><span class="o">.</span><span class="n">get_forces</span><span class="p">(</span><span class="n">atoms</span><span class="p">)</span></div>
 
-</div>
+
 <div class="viewcode-block" id="LOTFDynamics.get_extrapolation_forces"><a class="viewcode-back" href="../../lotf.html#quippy.lotf.LOTFDynamics.get_extrapolation_forces">[docs]</a>    <span class="k">def</span> <span class="nf">get_extrapolation_forces</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">atoms</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Get LOTF forces at extrapolation step `i`</span>
@@ -386,9 +386,9 @@
                       <span class="n">lotf_do_qm</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span>
                       <span class="n">lotf_do_fit</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span>                 
                       <span class="n">lotf_do_interp</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">calc</span><span class="o">.</span><span class="n">get_forces</span><span class="p">(</span><span class="n">atoms</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">calc</span><span class="o">.</span><span class="n">get_forces</span><span class="p">(</span><span class="n">atoms</span><span class="p">)</span></div>
 
-</div>
+
 <div class="viewcode-block" id="LOTFDynamics.get_interpolation_forces"><a class="viewcode-back" href="../../lotf.html#quippy.lotf.LOTFDynamics.get_interpolation_forces">[docs]</a>    <span class="k">def</span> <span class="nf">get_interpolation_forces</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">atoms</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Get LOTF forces at interpolation step `i`</span>
@@ -404,9 +404,9 @@
                       <span class="n">lotf_do_interp</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
                       <span class="n">lotf_do_fit</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span>
                       <span class="n">lotf_interp</span><span class="o">=</span><span class="n">interp_frac</span><span class="p">)</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">calc</span><span class="o">.</span><span class="n">get_forces</span><span class="p">(</span><span class="n">atoms</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">calc</span><span class="o">.</span><span class="n">get_forces</span><span class="p">(</span><span class="n">atoms</span><span class="p">)</span></div>
 
-</div>
+
 <div class="viewcode-block" id="LOTFDynamics.fit_forces"><a class="viewcode-back" href="../../lotf.html#quippy.lotf.LOTFDynamics.fit_forces">[docs]</a>    <span class="k">def</span> <span class="nf">fit_forces</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">atoms</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Evaluate QM forces and optimise the adjustable potential to reproduce them</span>
@@ -420,9 +420,9 @@
                       <span class="n">lotf_do_map</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span>
                       <span class="n">lotf_do_fit</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
                       <span class="n">lotf_do_interp</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">calc</span><span class="o">.</span><span class="n">get_forces</span><span class="p">(</span><span class="n">atoms</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">calc</span><span class="o">.</span><span class="n">get_forces</span><span class="p">(</span><span class="n">atoms</span><span class="p">)</span></div>
 
-</div>
+
 <div class="viewcode-block" id="LOTFDynamics.get_reference_forces"><a class="viewcode-back" href="../../lotf.html#quippy.lotf.LOTFDynamics.get_reference_forces">[docs]</a>    <span class="k">def</span> <span class="nf">get_reference_forces</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">atoms</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Do a reference QM calculation and return forces resulting from standard force mixing.</span>
@@ -440,9 +440,9 @@
                       <span class="n">lotf_do_map</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span>
                       <span class="n">lotf_do_fit</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span>
                       <span class="n">lotf_do_interp</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">calc</span><span class="o">.</span><span class="n">get_forces</span><span class="p">(</span><span class="n">atoms</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">calc</span><span class="o">.</span><span class="n">get_forces</span><span class="p">(</span><span class="n">atoms</span><span class="p">)</span></div>
 
-</div>
+
     <span class="k">def</span> <span class="nf">_calc_force_error</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">qm_only</span><span class="o">=</span><span class="bp">True</span><span class="p">):</span>
        <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">       Compute reference forces and compare with current forces `f`</span>
@@ -459,10 +459,10 @@
        <span class="bp">self</span><span class="o">.</span><span class="n">atoms</span><span class="o">.</span><span class="n">set_array</span><span class="p">(</span><span class="s">&#39;force_error&#39;</span><span class="p">,</span> <span class="n">ref_forces</span> <span class="o">-</span> <span class="n">f</span><span class="p">)</span>
        
        <span class="bp">self</span><span class="o">.</span><span class="n">rms_force_error</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="n">force_error</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
-       <span class="bp">self</span><span class="o">.</span><span class="n">max_force_error</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">force_error</span><span class="p">)</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+       <span class="bp">self</span><span class="o">.</span><span class="n">max_force_error</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">force_error</span><span class="p">)</span><span class="o">.</span><span class="n">max</span><span class="p">()</span></div>
 
 
-</div>
+
 <div class="viewcode-block" id="update_hysteretic_qm_region"><a class="viewcode-back" href="../../lotf.html#quippy.lotf.update_hysteretic_qm_region">[docs]</a><span class="k">def</span> <span class="nf">update_hysteretic_qm_region</span><span class="p">(</span><span class="n">atoms</span><span class="p">,</span> <span class="n">old_qm_list</span><span class="p">,</span> <span class="n">qm_centre</span><span class="p">,</span> <span class="n">qm_inner_radius</span><span class="p">,</span>
                                 <span class="n">qm_outer_radius</span><span class="p">,</span> <span class="n">use_avgpos</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">update_marks</span><span class="o">=</span><span class="bp">True</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
@@ -506,9 +506,9 @@
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">calc</span><span class="p">,</span> <span class="n">ForceMixingPotential</span><span class="p">):</span>
             <span class="n">calc</span><span class="o">.</span><span class="n">set_qm_atoms</span><span class="p">(</span><span class="n">qm_list</span><span class="p">)</span>
 
-    <span class="k">return</span> <span class="n">qm_list</span>
+    <span class="k">return</span> <span class="n">qm_list</span></div>
 
-</div>
+
 <div class="viewcode-block" id="iter_atom_centered_clusters"><a class="viewcode-back" href="../../lotf.html#quippy.lotf.iter_atom_centered_clusters">[docs]</a><span class="k">def</span> <span class="nf">iter_atom_centered_clusters</span><span class="p">(</span><span class="n">at</span><span class="p">,</span> <span class="n">mark_name</span><span class="o">=</span><span class="s">&#39;hybrid_mark&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">cluster_args</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Iterate over all atom-centered (little) clusters in `at`.</span>
@@ -565,14 +565,14 @@
         <li class="right" >
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../../index.html">quippy  documentation</a> &raquo;</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">quippy ac3573e documentation</a> &raquo;</li>
           <li class="nav-item nav-item-1"><a href="../index.html" >Module code</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &copy; Copyright 2008-2015, James Kermode.
-      Last updated on Nov 17, 2015.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+      Last updated on Jan 14, 2016.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.4.
     </div>
   </body>
 </html>

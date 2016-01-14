@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Fortran Dictionary objects for storing key/value pairs &mdash; quippy  documentation</title>
+    <title>Fortran Dictionary objects for storing key/value pairs &mdash; quippy ac3573e documentation</title>
     
     <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '',
+        VERSION:     'ac3573e',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="quippy  documentation" href="index.html" />
+    <link rel="top" title="quippy ac3573e documentation" href="index.html" />
     <link rel="up" title="Quippy library reference" href="quippy.html" /> 
   </head>
   <body role="document">
@@ -36,7 +36,7 @@
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">quippy  documentation</a> &raquo;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">quippy ac3573e documentation</a> &raquo;</li>
           <li class="nav-item nav-item-1"><a href="quippy.html" accesskey="U">Quippy library reference</a> &raquo;</li> 
       </ul>
     </div>
@@ -99,6 +99,9 @@ or a 1-D array of any of those. 2-D arrays of integers and reals are also suppor
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#quippy.dictionary.bcast" title="quippy.dictionary.bcast"><code class="xref py py-obj docutils literal"><span class="pre">bcast</span></code></a>(*args,&nbsp;**kwargs)</td>
+<td>Routine is wrapper around Fortran interface <code class="docutils literal"><span class="pre">bcast</span></code> containing multiple routines:</td>
+</tr>
 </tbody>
 </table>
 <p class="rubric">Attributes</p>
@@ -205,7 +208,7 @@ or a 1-D array of any of those. 2-D arrays of integers and reals are also suppor
 </ul>
 <p>Initialise a new empty dictionary</p>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">__init__initialise</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">__init__initialise</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 <p>The quippy Python <a class="reference internal" href="#quippy.dictionary.Dictionary" title="quippy.dictionary.Dictionary"><code class="xref py py-class docutils literal"><span class="pre">Dictionary</span></code></a> class is designed to behave
 as much as possible like a true Python dictionary, but since it is
 implemented in Fortran it can only store a restricted range of
@@ -249,7 +252,7 @@ files:</p>
 <span class="go">([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;], [1, 2, 3])</span>
 </pre></div>
 </div>
-<p>Class is wrapper around Fortran type <code class="docutils literal"><span class="pre">Dictionary</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Class is wrapper around Fortran type <code class="docutils literal"><span class="pre">Dictionary</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 <p class="rubric">Attributes</p>
 <table border="1" class="longtable docutils">
 <colgroup>
@@ -275,14 +278,98 @@ files:</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#quippy.dictionary.Dictionary.get_array" title="quippy.dictionary.Dictionary.get_array"><code class="xref py py-obj docutils literal"><span class="pre">get_array</span></code></a>(key)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#quippy.dictionary.Dictionary.add_array" title="quippy.dictionary.Dictionary.add_array"><code class="xref py py-obj docutils literal"><span class="pre">add_array</span></code></a>(*args,&nbsp;**kwargs)</td>
+<td>Wrapper around Fortran interface <code class="docutils literal"><span class="pre">add_array</span></code> containing multiple routines:</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#quippy.dictionary.Dictionary.assignment" title="quippy.dictionary.Dictionary.assignment"><code class="xref py py-obj docutils literal"><span class="pre">assignment</span></code></a>(from)</td>
+<td>Make a deep copy of <code class="docutils literal"><span class="pre">from</span></code> in <code class="docutils literal"><span class="pre">this</span></code>, allocating new memory for array components; no error passing, for the assignment operator</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#quippy.dictionary.Dictionary.deepcopy" title="quippy.dictionary.Dictionary.deepcopy"><code class="xref py py-obj docutils literal"><span class="pre">deepcopy</span></code></a>(from,[error])</td>
+<td>Make a deep copy of <code class="docutils literal"><span class="pre">from</span></code> in <code class="docutils literal"><span class="pre">this</span></code>, allocating new memory for array components</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#quippy.dictionary.Dictionary.deepcopy_no_error" title="quippy.dictionary.Dictionary.deepcopy_no_error"><code class="xref py py-obj docutils literal"><span class="pre">deepcopy_no_error</span></code></a>(from)</td>
+<td>Make a deep copy of <code class="docutils literal"><span class="pre">from</span></code> in <code class="docutils literal"><span class="pre">this</span></code>, allocating new memory for array components; no error passing, for the assignment operator</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#quippy.dictionary.Dictionary.expand_string" title="quippy.dictionary.Dictionary.expand_string"><code class="xref py py-obj docutils literal"><span class="pre">expand_string</span></code></a>(in,[error])</td>
+<td>Copy extendable string from <code class="docutils literal"><span class="pre">in</span></code> to <code class="docutils literal"><span class="pre">out</span></code>, expanding variables formatted as <code class="docutils literal"><span class="pre">\:math:`KEY</span></code> or <code class="docutils literal"><span class="pre">\`\{KEY\}</span></code> using values in this Dictionary.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#quippy.dictionary.Dictionary.get_array" title="quippy.dictionary.Dictionary.get_array"><code class="xref py py-obj docutils literal"><span class="pre">get_array</span></code></a>(key)</td>
 <td>Return a _reference_ to an array stored in this Dictionary</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#quippy.dictionary.Dictionary.get_key" title="quippy.dictionary.Dictionary.get_key"><code class="xref py py-obj docutils literal"><span class="pre">get_key</span></code></a>(i,[error])</td>
+<td><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#quippy.dictionary.Dictionary.get_type" title="quippy.dictionary.Dictionary.get_type"><code class="xref py py-obj docutils literal"><span class="pre">get_type</span></code></a>(key)</td>
 <td>Return an integer code for the type of the value associated with a key</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#quippy.dictionary.Dictionary.get_value" title="quippy.dictionary.Dictionary.get_value"><code class="xref py py-obj docutils literal"><span class="pre">get_value</span></code></a>(k)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#quippy.dictionary.Dictionary.get_type_and_size" title="quippy.dictionary.Dictionary.get_type_and_size"><code class="xref py py-obj docutils literal"><span class="pre">get_type_and_size</span></code></a>(key,[error])</td>
+<td><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#quippy.dictionary.Dictionary.get_value" title="quippy.dictionary.Dictionary.get_value"><code class="xref py py-obj docutils literal"><span class="pre">get_value</span></code></a>(k)</td>
 <td>Return a _copy_ of a value stored in Dictionary</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">is_same_fortran_object</span></code>(other)</td>
+<td>Test if <cite>self</cite> and <cite>other</cite> point to the same Fortan object.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">iterkeys</span></code>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#quippy.dictionary.Dictionary.lookup_entry_i" title="quippy.dictionary.Dictionary.lookup_entry_i"><code class="xref py py-obj docutils literal"><span class="pre">lookup_entry_i</span></code></a>(key,[case_sensitive])</td>
+<td>OMIT</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#quippy.dictionary.Dictionary.print_" title="quippy.dictionary.Dictionary.print_"><code class="xref py py-obj docutils literal"><span class="pre">print_</span></code></a>([verbosity,file])</td>
+<td>Print a DictEntry or a Dictionary</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#quippy.dictionary.Dictionary.print_keys" title="quippy.dictionary.Dictionary.print_keys"><code class="xref py py-obj docutils literal"><span class="pre">print_keys</span></code></a>([verbosity,file])</td>
+<td><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#quippy.dictionary.Dictionary.read_string" title="quippy.dictionary.Dictionary.read_string"><code class="xref py py-obj docutils literal"><span class="pre">read_string</span></code></a>(str,[append,error])</td>
+<td>Read into this dictionary from a string</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#quippy.dictionary.Dictionary.remove_value" title="quippy.dictionary.Dictionary.remove_value"><code class="xref py py-obj docutils literal"><span class="pre">remove_value</span></code></a>(key)</td>
+<td>Remove an entry from a Dictionary</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#quippy.dictionary.Dictionary.set_value" title="quippy.dictionary.Dictionary.set_value"><code class="xref py py-obj docutils literal"><span class="pre">set_value</span></code></a>(*args,&nbsp;**kwargs)</td>
+<td>Set a value in a Dictionary</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#quippy.dictionary.Dictionary.set_value_pointer" title="quippy.dictionary.Dictionary.set_value_pointer"><code class="xref py py-obj docutils literal"><span class="pre">set_value_pointer</span></code></a>(*args,&nbsp;**kwargs)</td>
+<td>Wrapper around Fortran interface <code class="docutils literal"><span class="pre">set_value_pointer</span></code> containing multiple routines:</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">shallow_copy</span></code>()</td>
+<td>Return a shallow copy of <cite>self</cite>.</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">shallow_copy_from</span></code>(other)</td>
+<td>Transform <cite>self</cite> into a shallow copy of <cite>other</cite>.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#quippy.dictionary.Dictionary.swap" title="quippy.dictionary.Dictionary.swap"><code class="xref py py-obj docutils literal"><span class="pre">swap</span></code></a>(key1,key2,[case_sensitive,error])</td>
+<td>Swap the positions of two entries in the dictionary.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#quippy.dictionary.Dictionary.write_string" title="quippy.dictionary.Dictionary.write_string"><code class="xref py py-obj docutils literal"><span class="pre">write_string</span></code></a>(...)</td>
+<td>Write a string representation of this dictionary</td>
 </tr>
 </tbody>
 </table>
@@ -300,15 +387,15 @@ files:</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>key</strong> (<em>input string(len=-1)</em>) &#8211; </li>
-<li><strong>value</strong> (<em>input rank-3 array(&#8216;S&#8217;) with bounds (qp_n0,qp_n1,(1))</em>) &#8211; </li>
-<li><strong>len2</strong> (<em>input rank-1 array(&#8216;i&#8217;) with bounds (2)</em>) &#8211; </li>
+<li><strong>value</strong> (<em>input rank-3 array('S') with bounds (qp_n0,qp_n1,(1))</em>) &#8211; </li>
+<li><strong>len2</strong> (<em>input rank-1 array('i') with bounds (2)</em>) &#8211; </li>
 <li><strong>overwrite</strong> (<em>input int, optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_add_array_s_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_add_array_s_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -320,7 +407,7 @@ files:</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>key</strong> (<em>input string(len=-1)</em>) &#8211; </li>
-<li><strong>value</strong> (<em>input rank-1 array(&#8216;d&#8217;) with bounds (qp_n0)</em>) &#8211; </li>
+<li><strong>value</strong> (<em>input rank-1 array('d') with bounds (qp_n0)</em>) &#8211; </li>
 <li><strong>len</strong> (<em>input int</em>) &#8211; </li>
 <li><strong>overwrite</strong> (<em>input int, optional</em>) &#8211; </li>
 </ul>
@@ -328,7 +415,7 @@ files:</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_add_array_r_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_add_array_r_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -340,7 +427,7 @@ files:</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>key</strong> (<em>input string(len=-1)</em>) &#8211; </li>
-<li><strong>value</strong> (<em>input rank-1 array(&#8216;i&#8217;) with bounds (qp_n0)</em>) &#8211; </li>
+<li><strong>value</strong> (<em>input rank-1 array('i') with bounds (qp_n0)</em>) &#8211; </li>
 <li><strong>len</strong> (<em>input int</em>) &#8211; </li>
 <li><strong>overwrite</strong> (<em>input int, optional</em>) &#8211; </li>
 </ul>
@@ -348,7 +435,7 @@ files:</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_add_array_l_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_add_array_l_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -360,7 +447,7 @@ files:</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>key</strong> (<em>input string(len=-1)</em>) &#8211; </li>
-<li><strong>value</strong> (<em>input rank-1 array(&#8216;D&#8217;) with bounds (qp_n0)</em>) &#8211; </li>
+<li><strong>value</strong> (<em>input rank-1 array('D') with bounds (qp_n0)</em>) &#8211; </li>
 <li><strong>len</strong> (<em>input int</em>) &#8211; </li>
 <li><strong>overwrite</strong> (<em>input int, optional</em>) &#8211; </li>
 </ul>
@@ -368,7 +455,7 @@ files:</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_add_array_c_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_add_array_c_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -380,7 +467,7 @@ files:</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>key</strong> (<em>input string(len=-1)</em>) &#8211; </li>
-<li><strong>value</strong> (<em>input rank-1 array(&#8216;i&#8217;) with bounds (qp_n0)</em>) &#8211; </li>
+<li><strong>value</strong> (<em>input rank-1 array('i') with bounds (qp_n0)</em>) &#8211; </li>
 <li><strong>len</strong> (<em>input int</em>) &#8211; </li>
 <li><strong>overwrite</strong> (<em>input int, optional</em>) &#8211; </li>
 </ul>
@@ -388,7 +475,7 @@ files:</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_add_array_i_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_add_array_i_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -400,15 +487,15 @@ files:</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>key</strong> (<em>input string(len=-1)</em>) &#8211; </li>
-<li><strong>value</strong> (<em>input rank-2 array(&#8216;d&#8217;) with bounds (qp_n0,qp_n1)</em>) &#8211; </li>
-<li><strong>len2</strong> (<em>input rank-1 array(&#8216;i&#8217;) with bounds (2)</em>) &#8211; </li>
+<li><strong>value</strong> (<em>input rank-2 array('d') with bounds (qp_n0,qp_n1)</em>) &#8211; </li>
+<li><strong>len2</strong> (<em>input rank-1 array('i') with bounds (2)</em>) &#8211; </li>
 <li><strong>overwrite</strong> (<em>input int, optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_add_array_r2_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_add_array_r2_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -428,7 +515,7 @@ files:</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_add_array_l</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_add_array_l</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -441,14 +528,14 @@ files:</p>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>key</strong> (<em>input string(len=-1)</em>) &#8211; </li>
 <li><strong>value</strong> (<em>input float</em>) &#8211; </li>
-<li><strong>len2</strong> (<em>input rank-1 array(&#8216;i&#8217;) with bounds (2)</em>) &#8211; </li>
+<li><strong>len2</strong> (<em>input rank-1 array('i') with bounds (2)</em>) &#8211; </li>
 <li><strong>overwrite</strong> (<em>input int, optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_add_array_r2</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_add_array_r2</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -460,15 +547,15 @@ files:</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>key</strong> (<em>input string(len=-1)</em>) &#8211; </li>
-<li><strong>value</strong> (<em>input rank-2 array(&#8216;i&#8217;) with bounds (qp_n0,qp_n1)</em>) &#8211; </li>
-<li><strong>len2</strong> (<em>input rank-1 array(&#8216;i&#8217;) with bounds (2)</em>) &#8211; </li>
+<li><strong>value</strong> (<em>input rank-2 array('i') with bounds (qp_n0,qp_n1)</em>) &#8211; </li>
+<li><strong>len2</strong> (<em>input rank-1 array('i') with bounds (2)</em>) &#8211; </li>
 <li><strong>overwrite</strong> (<em>input int, optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_add_array_i2_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_add_array_i2_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -488,7 +575,7 @@ files:</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_add_array_i</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_add_array_i</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -501,14 +588,14 @@ files:</p>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>key</strong> (<em>input string(len=-1)</em>) &#8211; </li>
 <li><strong>value</strong> (<em>input int</em>) &#8211; </li>
-<li><strong>len2</strong> (<em>input rank-1 array(&#8216;i&#8217;) with bounds (2)</em>) &#8211; </li>
+<li><strong>len2</strong> (<em>input rank-1 array('i') with bounds (2)</em>) &#8211; </li>
 <li><strong>overwrite</strong> (<em>input int, optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_add_array_i2</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_add_array_i2</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -521,14 +608,14 @@ files:</p>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>key</strong> (<em>input string(len=-1)</em>) &#8211; </li>
 <li><strong>value</strong> (<em>input string(len=1)</em>) &#8211; </li>
-<li><strong>len2</strong> (<em>input rank-1 array(&#8216;i&#8217;) with bounds (2)</em>) &#8211; </li>
+<li><strong>len2</strong> (<em>input rank-1 array('i') with bounds (2)</em>) &#8211; </li>
 <li><strong>overwrite</strong> (<em>input int, optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_add_array_s</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_add_array_s</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -548,7 +635,7 @@ files:</p>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_add_array_r</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_add_array_r</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 </div></blockquote>
@@ -567,7 +654,7 @@ files:</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">deepcopy_no_error</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">deepcopy_no_error</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -585,7 +672,7 @@ files:</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">deepcopy</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">deepcopy</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -601,7 +688,7 @@ files:</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_deepcopy_no_error</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_deepcopy_no_error</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -624,7 +711,7 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">expand_string</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">expand_string</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -650,7 +737,7 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_get_key</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_get_key</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -676,7 +763,7 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_get_type_and_size</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_get_type_and_size</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -703,7 +790,7 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">lookup_entry_i</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">lookup_entry_i</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -721,7 +808,7 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">print_</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">print_</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -738,7 +825,7 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">print_keys</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">print_keys</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -760,7 +847,7 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">read_string</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">read_string</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -776,7 +863,7 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">remove_value</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">remove_value</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -794,13 +881,13 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>key</strong> (<em>input string(len=-1)</em>) &#8211; </li>
-<li><strong>value</strong> (<em>input rank-1 array(&#8216;i&#8217;) with bounds (qp_n0)</em>) &#8211; </li>
+<li><strong>value</strong> (<em>input rank-1 array('i') with bounds (qp_n0)</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_l_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_l_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -818,7 +905,7 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_s_es</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_s_es</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -830,13 +917,13 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>key</strong> (<em>input string(len=-1)</em>) &#8211; </li>
-<li><strong>value</strong> (<em>input rank-3 array(&#8216;S&#8217;) with bounds (qp_n0,qp_n1,(1))</em>) &#8211; </li>
+<li><strong>value</strong> (<em>input rank-3 array('S') with bounds (qp_n0,qp_n1,(1))</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_s_a2</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_s_a2</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -848,13 +935,13 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>key</strong> (<em>input string(len=-1)</em>) &#8211; </li>
-<li><strong>value</strong> (<em>input rank-1 array(&#8216;D&#8217;) with bounds (qp_n0)</em>) &#8211; </li>
+<li><strong>value</strong> (<em>input rank-1 array('D') with bounds (qp_n0)</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_c_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_c_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -866,13 +953,13 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>key</strong> (<em>input string(len=-1)</em>) &#8211; </li>
-<li><strong>value</strong> (<em>input rank-1 array(&#8216;i&#8217;) with bounds (qp_n0)</em>) &#8211; </li>
+<li><strong>value</strong> (<em>input rank-1 array('i') with bounds (qp_n0)</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_i_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_i_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -884,13 +971,13 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>key</strong> (<em>input string(len=-1)</em>) &#8211; </li>
-<li><strong>value</strong> (<em>input rank-2 array(&#8216;d&#8217;) with bounds (qp_n0,qp_n1)</em>) &#8211; </li>
+<li><strong>value</strong> (<em>input rank-2 array('d') with bounds (qp_n0,qp_n1)</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_r_a2</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_r_a2</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -904,7 +991,7 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_none</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_none</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -916,13 +1003,13 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>key</strong> (<em>input string(len=-1)</em>) &#8211; </li>
-<li><strong>value</strong> (<em>input rank-1 array(&#8216;d&#8217;) with bounds (qp_n0)</em>) &#8211; </li>
+<li><strong>value</strong> (<em>input rank-1 array('d') with bounds (qp_n0)</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_r_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_r_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -940,7 +1027,7 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_s</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_s</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -952,13 +1039,13 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>key</strong> (<em>input string(len=-1)</em>) &#8211; </li>
-<li><strong>value</strong> (<em>input rank-2 array(&#8216;S&#8217;) with bounds (qp_n0,(*))</em>) &#8211; </li>
+<li><strong>value</strong> (<em>input rank-2 array('S') with bounds (qp_n0,(*))</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_s_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_s_a</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -976,7 +1063,7 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_l</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_l</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -988,13 +1075,13 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>key</strong> (<em>input string(len=-1)</em>) &#8211; </li>
-<li><strong>value</strong> (<em>input rank-2 array(&#8216;i&#8217;) with bounds (qp_n0,qp_n1)</em>) &#8211; </li>
+<li><strong>value</strong> (<em>input rank-2 array('i') with bounds (qp_n0,qp_n1)</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_i_a2</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_i_a2</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1012,7 +1099,7 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_dict</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_dict</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1030,7 +1117,7 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_i</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_i</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1048,7 +1135,7 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_r</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_r</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 </div></blockquote>
@@ -1068,13 +1155,13 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>key</strong> (<em>input string(len=-1)</em>) &#8211; </li>
-<li><strong>ptr</strong> (<em>input rank-1 array(&#8216;i&#8217;) with bounds (qp_n0)</em>) &#8211; </li>
+<li><strong>ptr</strong> (<em>input rank-1 array('i') with bounds (qp_n0)</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_pointer_i</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_pointer_i</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1086,13 +1173,13 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>key</strong> (<em>input string(len=-1)</em>) &#8211; </li>
-<li><strong>ptr</strong> (<em>input rank-1 array(&#8216;i&#8217;) with bounds (qp_n0)</em>) &#8211; </li>
+<li><strong>ptr</strong> (<em>input rank-1 array('i') with bounds (qp_n0)</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_pointer_l</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_pointer_l</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1104,13 +1191,13 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>key</strong> (<em>input string(len=-1)</em>) &#8211; </li>
-<li><strong>ptr</strong> (<em>input rank-1 array(&#8216;D&#8217;) with bounds (qp_n0)</em>) &#8211; </li>
+<li><strong>ptr</strong> (<em>input rank-1 array('D') with bounds (qp_n0)</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_pointer_c</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_pointer_c</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1122,13 +1209,13 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>key</strong> (<em>input string(len=-1)</em>) &#8211; </li>
-<li><strong>ptr</strong> (<em>input rank-1 array(&#8216;d&#8217;) with bounds (qp_n0)</em>) &#8211; </li>
+<li><strong>ptr</strong> (<em>input rank-1 array('d') with bounds (qp_n0)</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_pointer_r</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_pointer_r</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1140,13 +1227,13 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>key</strong> (<em>input string(len=-1)</em>) &#8211; </li>
-<li><strong>ptr</strong> (<em>input rank-2 array(&#8216;i&#8217;) with bounds (qp_n0,qp_n1)</em>) &#8211; </li>
+<li><strong>ptr</strong> (<em>input rank-2 array('i') with bounds (qp_n0,qp_n1)</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_pointer_i2</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_pointer_i2</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1158,13 +1245,13 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>key</strong> (<em>input string(len=-1)</em>) &#8211; </li>
-<li><strong>ptr</strong> (<em>input rank-2 array(&#8216;d&#8217;) with bounds (qp_n0,qp_n1)</em>) &#8211; </li>
+<li><strong>ptr</strong> (<em>input rank-2 array('d') with bounds (qp_n0,qp_n1)</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_pointer_r2</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_pointer_r2</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1176,13 +1263,13 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>key</strong> (<em>input string(len=-1)</em>) &#8211; </li>
-<li><strong>ptr</strong> (<em>input rank-3 array(&#8216;S&#8217;) with bounds (qp_n0,qp_n1,(1))</em>) &#8211; </li>
+<li><strong>ptr</strong> (<em>input rank-3 array('S') with bounds (qp_n0,qp_n1,(1))</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_pointer_s</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_set_value_pointer_s</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 </div></blockquote>
@@ -1205,7 +1292,7 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">swap</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">swap</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -1241,7 +1328,7 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 </tbody>
 </table>
 <p class="rubric">References</p>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">write_string</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">write_string</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="attribute">
@@ -1279,13 +1366,13 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>mpi</strong> (<a class="reference internal" href="mpi_context.html#quippy.mpi_context.MPI_context" title="quippy.mpi_context.MPI_context"><code class="xref py py-class docutils literal"><span class="pre">MPI_context</span></code></a> object) &#8211; </li>
 <li><strong>dict</strong> (<a class="reference internal" href="#quippy.dictionary.Dictionary" title="quippy.dictionary.Dictionary"><code class="xref py py-class docutils literal"><span class="pre">Dictionary</span></code></a> object) &#8211; </li>
-<li><strong>error</strong> (<em>in/output rank-0 array(int,&#8217;i&#8217;), optional</em>) &#8211; </li>
+<li><strong>error</strong> (<em>in/output rank-0 array(int,'i'), optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_bcast</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Dictionary.f95">libAtoms/Dictionary.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">dictionary_bcast</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Dictionary.f95">src/libAtoms/Dictionary.f95</a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1299,13 +1386,13 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
 <li><strong>mpi</strong> (<a class="reference internal" href="mpi_context.html#quippy.mpi_context.MPI_context" title="quippy.mpi_context.MPI_context"><code class="xref py py-class docutils literal"><span class="pre">MPI_context</span></code></a> object) &#8211; </li>
 <li><strong>at</strong> (<a class="reference internal" href="atoms.html#quippy.atoms.Atoms" title="quippy.atoms.Atoms"><code class="xref py py-class docutils literal"><span class="pre">Atoms</span></code></a> object) &#8211; </li>
 <li><strong>test_out</strong> (<a class="reference internal" href="atoms.html#quippy.atoms.Atoms" title="quippy.atoms.Atoms"><code class="xref py py-class docutils literal"><span class="pre">Atoms</span></code></a> object, optional) &#8211; </li>
-<li><strong>error</strong> (<em>in/output rank-0 array(int,&#8217;i&#8217;), optional</em>) &#8211; </li>
+<li><strong>error</strong> (<em>in/output rank-0 array(int,'i'), optional</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">atoms_bcast</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/libAtoms/Atoms_types.f95">libAtoms/Atoms_types.f95</a>.</p>
+<p>Routine is wrapper around Fortran routine <code class="docutils literal"><span class="pre">atoms_bcast</span></code> defined in file <a class="reference external" href="https://github.com/libAtoms/QUIP/blob/public/src/libAtoms/Atoms_types.f95">src/libAtoms/Atoms_types.f95</a>.</p>
 </dd></dl>
 
 </div></blockquote>
@@ -1328,14 +1415,14 @@ is raised if a key is not found, or if the string ends with a dollar sign or bra
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">quippy  documentation</a> &raquo;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">quippy ac3573e documentation</a> &raquo;</li>
           <li class="nav-item nav-item-1"><a href="quippy.html" >Quippy library reference</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &copy; Copyright 2008-2015, James Kermode.
-      Last updated on Nov 17, 2015.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+      Last updated on Jan 14, 2016.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.4.
     </div>
   </body>
 </html>

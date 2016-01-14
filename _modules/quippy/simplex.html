@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>quippy.simplex &mdash; quippy  documentation</title>
+    <title>quippy.simplex &mdash; quippy ac3573e documentation</title>
     
     <link rel="stylesheet" href="../../_static/sphinxdoc.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '',
+        VERSION:     'ac3573e',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="top" title="quippy  documentation" href="../../index.html" />
+    <link rel="top" title="quippy ac3573e documentation" href="../../index.html" />
     <link rel="up" title="Module code" href="../index.html" /> 
   </head>
   <body role="document">
@@ -36,7 +36,7 @@
         <li class="right" >
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../../index.html">quippy  documentation</a> &raquo;</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">quippy ac3573e documentation</a> &raquo;</li>
           <li class="nav-item nav-item-1"><a href="../index.html" accesskey="U">Module code</a> &raquo;</li> 
       </ul>
     </div>
@@ -189,8 +189,8 @@
             <span class="bp">self</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="n">ihi</span><span class="p">]</span> <span class="o">=</span> <span class="n">ytry</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">p</span><span class="p">[</span><span class="n">ihi</span><span class="p">,:]</span> <span class="o">=</span> <span class="n">ptry</span>
 
-        <span class="k">return</span> <span class="n">ytry</span>
-</div>
+        <span class="k">return</span> <span class="n">ytry</span></div>
+
     <span class="k">def</span> <span class="nf">step</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">temperature</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
         <span class="c"># Find highest (worst), next-highest and lowest (best) points</span>
         <span class="n">order</span> <span class="o">=</span> <span class="n">y</span><span class="o">.</span><span class="n">argsort</span><span class="p">()</span>
@@ -256,9 +256,9 @@
             <span class="k">except</span> <span class="n">Converged</span><span class="p">:</span>
                 <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">,:]</span>
             <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">nfunc</span> <span class="o">&gt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">NMAX</span><span class="p">:</span>
-                <span class="k">raise</span> <span class="n">NotConverged</span><span class="p">(</span><span class="s">&quot;NMAX exceeded&quot;</span><span class="p">)</span>
+                <span class="k">raise</span> <span class="n">NotConverged</span><span class="p">(</span><span class="s">&quot;NMAX exceeded&quot;</span><span class="p">)</span></div>
 
-</div>
+
 <div class="viewcode-block" id="DownhillSimplex.anneal_step"><a class="viewcode-back" href="../../simplex.html#quippy.simplex.DownhillSimplex.anneal_step">[docs]</a>    <span class="k">def</span> <span class="nf">anneal_step</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">iter</span><span class="p">,</span> <span class="n">temperature</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Anneal for *iter* steps at temperature *temperature*.</span>
@@ -277,9 +277,9 @@
                 <span class="k">return</span> <span class="bp">True</span>
 
             <span class="k">if</span> <span class="nb">iter</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-                <span class="k">return</span> <span class="bp">False</span>
+                <span class="k">return</span> <span class="bp">False</span></div>
 
-</div>
+
     <span class="k">def</span> <span class="nf">anneal</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">epsilon</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">graphics</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">pause</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
         <span class="n">step</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="k">while</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">anneal_step</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">T</span><span class="p">):</span>
@@ -298,9 +298,9 @@
                 <span class="k">if</span> <span class="n">pause</span><span class="p">:</span>
                     <span class="nb">raw_input</span><span class="p">(</span><span class="s">&#39;continue...&#39;</span><span class="p">)</span>
             <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
-                <span class="k">print</span> <span class="s">&#39;step </span><span class="si">%d</span><span class="s"> temperature </span><span class="si">%f</span><span class="s"> x </span><span class="si">%s</span><span class="s"> y </span><span class="si">%f</span><span class="s">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">step</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">p</span><span class="p">[</span><span class="n">ilo</span><span class="p">,:],</span> <span class="bp">self</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="n">ilo</span><span class="p">])</span>
+                <span class="k">print</span> <span class="s">&#39;step </span><span class="si">%d</span><span class="s"> temperature </span><span class="si">%f</span><span class="s"> x </span><span class="si">%s</span><span class="s"> y </span><span class="si">%f</span><span class="s">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">step</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">p</span><span class="p">[</span><span class="n">ilo</span><span class="p">,:],</span> <span class="bp">self</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="n">ilo</span><span class="p">])</span></div>
 
-</div>
+
 <span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&#39;__main__&#39;</span><span class="p">:</span>
     
     <span class="n">do_graphics</span> <span class="o">=</span> <span class="bp">True</span>
@@ -341,14 +341,14 @@
         <li class="right" >
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../../index.html">quippy  documentation</a> &raquo;</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">quippy ac3573e documentation</a> &raquo;</li>
           <li class="nav-item nav-item-1"><a href="../index.html" >Module code</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &copy; Copyright 2008-2015, James Kermode.
-      Last updated on Nov 17, 2015.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+      Last updated on Jan 14, 2016.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.4.
     </div>
   </body>
 </html>
