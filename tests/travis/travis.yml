@@ -152,7 +152,8 @@ jobs:
         - bin/gitversion > GIT_VERSION
         - bin/gapversion.sh > GAP_VERSION
         - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-        - docker build -t $DOCKER_USERNAME/quip .
-        - docker push $DOCKER_USERNAME/quip
+        - ln -s docker/Dockerfile.vanilla Dockerfile
+        - docker build -t $DOCKER_USERNAME/quip-vanilla .
+        - docker push $DOCKER_USERNAME/quip-vanilla
       after_success: skip
 
