@@ -144,3 +144,15 @@ after_success:
 #  email:
 #    - quip-developers@eng.cam.ac.uk
 
+jobs:
+  include:
+    - stage: docker
+      install: skip
+      script:
+        - bin/gitversion > GIT_VERSION
+        - bin/gapversion.sh > GAP_VERSION
+        - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+        - docker build -t $DOCKER_USERNAME/quip .
+        - docker push $DOCKER_USERNAME/quip
+      after_success: skip
+
