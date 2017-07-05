@@ -17,7 +17,7 @@ RUN cd /opt/QUIP \
     && make \
     && make install-quippy
 
-ENV PATH="/opt/QUIP/build/linux_x86_64_gfortran_openmp:${PATH}"
+ENV PATH="/opt/QUIP/build/${QUIP_ARCH}:${PATH}"
 
 CMD jupyter notebook --port=8899 --ip="*" --allow-root --NotebookApp.token='' --NotebookApp.password=''
 

@@ -5,10 +5,10 @@ MAINTAINER Tom Daff "tdd20@cam.ac.uk"
 
 # To build within the image without additonal libraries use
 # the git+VANILLA version
-# RUN git clone https://github.com/libAtoms/QUIP.git /opt/QUIP
+RUN git clone https://github.com/libAtoms/QUIP.git /opt/QUIP
 ENV BUILD VANILLA
 # ENV BUILD ALL
-ADD . /opt/QUIP
+# ADD . /opt/QUIP
 ENV QUIP_ARCH linux_x86_64_gfortran_openmp
 
 RUN cd /opt/QUIP \
@@ -17,7 +17,7 @@ RUN cd /opt/QUIP \
     && make \
     && make install-quippy
 
-ENV PATH="/opt/QUIP/build/linux_x86_64_gfortran_openmp:${PATH}"
+ENV PATH="/opt/QUIP/build/${QUIP_ARCH}:${PATH}"
 
 CMD jupyter notebook --port=8899 --ip="*" --allow-root --NotebookApp.token='' --NotebookApp.password=''
 
